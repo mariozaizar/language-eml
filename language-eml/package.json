@@ -1,0 +1,17 @@
+{
+  "name": "language-eml",
+  "version": "0.0.1",
+  "description": "Syntax Highlighting for E-Mail",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariozaizar/language-eml.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mariozaizar/language-eml/issues"
+  },
+  "license": ""
+}

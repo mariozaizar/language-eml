@@ -1,0 +1,365 @@
+Delivered-To: mariozaizar@example.com
+Received: by 10.182.142.33 with SMTP id rt1csp807632obb;
+        Thu, 18 Feb 2016 10:56:44 -0800 (PST)
+X-Received: by 10.55.79.134 with SMTP id d128mr10716794qkb.73.1455821804841;
+        Thu, 18 Feb 2016 10:56:44 -0800 (PST)
+Return-Path: <bounce+59db36.8e06-mariozaizar=example@slack.com>
+Received: from us-smtp-1.mimecast.com (us-smtp-delivery-1.mimecast.com. [207.211.31.120])
+        by mx.google.com with ESMTPS id c13si54234823qge.75.2016.02.18.10.56.44
+        for <mariozaizar@example.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 18 Feb 2016 10:56:44 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce+59db36.8e06-mariozaizar=example@slack.com designates 166.78.69.32 as permitted sender) client-ip=166.78.69.32;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounce+59db36.8e06-mariozaizar=example@slack.com designates 166.78.69.32 as permitted sender) smtp.mailfrom=bounce+59db36.8e06-mariozaizar=example@slack.com;
+       dkim=neutral (body hash did not verify) header.i=@slack.com
+Received: from mail-69-32.slack.com (mail-69-32.slack.com [166.78.69.32])
+ (Using TLS) by us-smtp-1.mimecast.com with ESMTP id
+ us-mta-13-5RET4ZHuTbKDsGsCUuUnHg-1; Thu, 18 Feb 2016 13:56:43 -0500
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=slack.com; q=dns/txt; s=mailo;
+ t=1455821802; h=Date: Message-Id: Content-Type: MIME-Version: Reply-To:
+ From: Subject: To: Sender;
+ bh=LHTvF5fy6Oa47PyGxtZ2LRbw8MJBPvm22y6onTiQ7L0=; b=R7NePMEtOp3KPoOTVuUcTfThYhMkB9A2wokVVX3D/P7aadOGfpFcTsfMaA6mruBFmUe0Y0HN
+ hdIWcEdWDttrtToQ+zKWEXmVomPmqsnJGrhy2zbL6qfslE15Qnqz7/g5UTUfm/yI3X26M6k0
+ gk+nOTLnHM5pDMNozqeNiIP4I+U=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=slack.com; s=mailo; q=dns;
+ h=Sender: To: Subject: From: Reply-To: MIME-Version: Content-Type:
+ Message-Id: Date;
+ b=4IMngFuo951Q5HZx2CfLl9yxLIn7C/oovdUSirMCDN+zOVZUdFHnzzOX3IG4y6bRc7elkg
+ /3Ti21D0vu4lTble1mocoIBkfa4aiOh+CNvvg6EpvRKSl68puFGHnvcILd+vzibmZHY8SZWW
+ GqfvXwtU9t3jmAQeC5BBm9GFY2Gw0=
+Sender: no-reply@slack.com
+X-Mailgun-Sid: WyIzOWRhNSIsICJtemFpemFyQHplbmRlc2suY29tIiwgIjhlMDYiXQ==
+Received: from: slack-www554.tinyspeck.com (ec2-54-210-34-228.compute-1.amazonaws.com [54.210.34.228])
+ by mxa.mailgun.org with ESMTP id 56c613e7.7f5688870a70-in3;
+ Thu, 18 Feb 2016 18:56:39 -0000 (UTC)
+Received: by slack-www554.tinyspeck.com (Postfix, from userid 33)
+	id 9D5E241DAE; Thu, 18 Feb 2016 10:56:39 -0800 (PST)
+To: mariozaizar@example.com
+Subject: =?utf-8?Q?Two=2dFactor_authentication_enabled?=
+From: "Slack" <no-reply@slack.com>
+Reply-To: no-reply@slack.com
+MIME-Version: 1.0
+Message-Id: <20160218185639.9D5E241DAE@slack-www554.tinyspeck.com>
+Date: Thu, 18 Feb 2016 10:56:39 -0800 (PST)
+X-MC-Unique: 5RET4ZHuTbKDsGsCUuUnHg-1
+Content-Type: multipart/alternative; boundary="__slack_788900245__"
+
+--__slack_788900245__
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Two-Factor authentication has been successfully enabled for your account
+on Slack. Don't forget to print a set of your backup codes[1] for
+safekeeping.
+
+If you made this change, then you're all set! If you did not enable
+two-factor authentication, please notify your team owner or admin
+immediately. =20
+
+If you have questions on how to use two-factor authentication with your
+team, please visit our FAQ[2] or reach out to us at feedback@slack.com.=20
+
+[1]
+https://example.slack.com/x-15787619126-22045218838/account/settings#two_fa=
+ctor
+[2]
+https://slack.example.com/hc/en-us/articles/204509068-Enabling-two-factor-a=
+uthentication
+
+--__slack_788900245__
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head><meta http-equiv=3D"Cont=
+ent-Type" content=3D"text/html; charset=3Dutf-8"><meta name=3D"viewport" co=
+ntent=3D"width=3Ddevice-width, initial-scale=3D1.0"><title>Two-Factor authe=
+ntication enabled</title><style type=3D"text/css">
+=09=09
+
+=09=09/* Template styling */
+=09=09body {
+=09=09=09font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+=09=09=09width: 100%;
+=09=09=09max-width: 100%;
+=09=09=09font-size: 17px;
+=09=09=09line-height: 24px;
+=09=09=09color: #373737;
+=09=09=09background: #F9F9F9;
+=09=09}
+=09=09h1, h2, h3, h4 {
+=09=09=09color: #2ab27b;
+=09=09=09margin-bottom: 12px;
+=09=09=09line-height: 26px;
+=09=09}
+=09=09p, ul, ul li {
+=09=09=09font-size: 17px;
+=09=09=09margin: 0 0 16px;
+=09=09=09line-height: 24px;
+=09=09}
+=09=09ul {
+=09=09=09margin-bottom: 24px;
+=09=09}
+=09=09ul li {
+=09=09=09margin-bottom: 8px;
+=09=09}
+=09=09p.mini {
+=09=09=09font-size: 12px;
+=09=09=09line-height: 18px;
+=09=09=09color: #ABAFB4;
+=09=09}
+=09=09p.message {
+=09=09=09font-size: 16px;
+=09=09=09line-height: 20px;
+=09=09=09margin-bottom: 4px;
+=09=09}
+=09=09hr {
+=09=09=09margin: 2rem 0;
+=09=09=09width: 100%;
+=09=09=09border: none;
+=09=09=09border-bottom: 1px solid #ECECEC;
+=09=09}
+=09=09a, a:link, a:visited, a:active, a:hover {
+=09=09=09font-weight: bold;
+=09=09=09color: #439fe0;
+=09=09=09text-decoration: none;
+=09=09=09word-break: break-word;
+=09=09}
+=09=09a:active, a:hover {
+=09=09=09text-decoration: underline;
+=09=09}
+=09=09.time {
+=09=09=09font-size: 11px;
+=09=09=09color: #ABAFB4;
+=09=09=09padding-right: 6px;
+=09=09}
+=09=09.emoji {
+=09=09=09vertical-align: bottom;
+=09=09}
+=09=09.avatar {
+=09=09=09border-radius: 2px;
+=09=09}
+=09=09#footer p {
+=09=09=09margin-top: 16px;
+=09=09=09font-size: 12px;
+=09=09}
+
+=09=09/* Client-specific Styles */
+=09=09#outlook a {padding:0;}
+=09=09body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-s=
+ize-adjust:100%; margin:0 auto; padding:0;}
+=09=09.ExternalClass {width:100%;}
+=09=09.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass=
+ font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+=09=09#backgroundTable {margin:0; padding:0; width:100%; line-height: 100% =
+!important;}
+
+=09=09/* Some sensible defaults for images
+=09=09Bring inline: Yes. */
+=09=09img {outline:none; text-decoration:none; -ms-interpolation-mode: bicu=
+bic;}
+=09=09a img {border:none;}
+=09=09.image_fix {display:block;}
+
+=09=09/* Outlook 07, 10 Padding issue fix
+=09=09Bring inline: No.*/
+=09=09table td {border-collapse: collapse;}
+
+=09    /* Fix spacing around Outlook 07, 10 tables
+=09    Bring inline: Yes */
+=09    table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt; }
+
+=09=09/* Mobile */
+=09=09@media only screen and (max-device-width: 480px) {
+=09=09=09/* Part one of controlling phone number linking for mobile. */
+=09=09=09a[href^=3D"tel"], a[href^=3D"sms"] {
+=09=09=09=09=09=09text-decoration: none;
+=09=09=09=09=09=09color: blue; /* or whatever your want */
+=09=09=09=09=09=09pointer-events: none;
+=09=09=09=09=09=09cursor: default;
+=09=09=09=09=09}
+
+=09=09=09.mobile_link a[href^=3D"tel"], .mobile_link a[href^=3D"sms"] {
+=09=09=09=09=09=09text-decoration: default;
+=09=09=09=09=09=09color: orange !important;
+=09=09=09=09=09=09pointer-events: auto;
+=09=09=09=09=09=09cursor: default;
+=09=09=09=09=09}
+
+=09=09}
+
+=09=09/* Not all email clients will obey these, but the important ones will=
+ */
+=09=09@media only screen and (max-width: 480px) {
+=09=09=09.card {
+=09=09=09=09padding: 1rem 0.75rem !important;
+=09=09=09}
+=09=09=09.link_option {
+=09=09=09=09font-size: 14px;
+=09=09=09}
+=09=09=09hr {
+=09=09=09=09margin: 2rem -0.75rem !important;
+=09=09=09=09padding-right: 1.5rem !important;
+=09=09=09}
+=09=09}
+
+=09=09/* More Specific Targeting */
+=09=09@media only screen and (min-device-width: 768px) and (max-device-widt=
+h: 1024px) {
+=09=09/* You guessed it, ipad (tablets, smaller screens, etc) */
+=09=09=09/* repeating for the ipad */
+=09=09=09a[href^=3D"tel"], a[href^=3D"sms"] {
+=09=09=09=09=09=09text-decoration: none;
+=09=09=09=09=09=09color: blue; /* or whatever your want */
+=09=09=09=09=09=09pointer-events: none;
+=09=09=09=09=09=09cursor: default;
+=09=09=09=09=09}
+
+=09=09=09.mobile_link a[href^=3D"tel"], .mobile_link a[href^=3D"sms"] {
+=09=09=09=09=09=09text-decoration: default;
+=09=09=09=09=09=09color: orange !important;
+=09=09=09=09=09=09pointer-events: auto;
+=09=09=09=09=09=09cursor: default;
+=09=09=09=09=09}
+=09=09}
+
+=09=09/* iPhone Retina */
+=09=09@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-d=
+evice-width: 640px)  {
+=09=09=09/* Must include !important on each style to override inline styles=
+ */
+=09=09=09#footer p {
+=09=09=09=09font-size: 9px;
+=09=09=09}
+=09=09}
+
+=09=09/* Android targeting */
+=09=09@media only screen and (-webkit-device-pixel-ratio:.75){
+=09=09=09/* Put CSS for low density (ldpi) Android layouts in here */
+=09=09=09img {
+=09=09=09=09max-width: 100%;
+=09=09=09=09height: auto;
+=09=09=09}
+=09=09}
+=09=09@media only screen and (-webkit-device-pixel-ratio:1){
+=09=09=09/* Put CSS for medium density (mdpi) Android layouts in here */
+=09=09=09img {
+=09=09=09=09max-width: 100%;
+=09=09=09=09height: auto;
+=09=09=09}
+=09=09}
+=09=09@media only screen and (-webkit-device-pixel-ratio:1.5){
+=09=09=09/* Put CSS for high density (hdpi) Android layouts in here */
+=09=09=09img {
+=09=09=09=09max-width: 100%;
+=09=09=09=09height: auto;
+=09=09=09}
+=09=09}
+=09=09/* Galaxy Nexus */
+=09=09@media only screen and (min-device-width : 720px) and (max-device-wid=
+th : 1280px) {
+=09=09=09img {
+=09=09=09=09max-width: 100%;
+=09=09=09=09height: auto;
+=09=09=09}
+=09=09=09body {
+=09=09=09=09font-size: 16px;
+=09=09=09}
+=09=09}
+=09=09/* end Android targeting */
+
+=09=09
+=09=09
+=09</style></head><body style=3D"background: #F9F9F9; color: #373737; font-=
+family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; li=
+ne-height: 24px; max-width: 100%; width: 100% !important; -ms-text-size-adj=
+ust: 100%; -webkit-text-size-adjust: 100%; margin: 0 auto; padding: 0;">
+=09<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"  =
+style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; line-height: 24px; margin: 0; padding: 0; width: 100%; font-size: 17=
+px; color: #373737; background: #F9F9F9;"><tr><td valign=3D"top" style=3D"b=
+order-collapse: collapse;">
+=09=09=09=09<table  width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt;"><tr><td valign=3D"bottom" style=3D"border-collapse: collap=
+se; padding: 20px 16px 12px;">
+=09=09=09=09=09=09=09<div style=3D"text-align: center;">
+=09=09=09=09=09=09=09=09<a href=3D"https://www.slack.com" style=3D"color: #=
+439fe0; font-weight: bold; text-decoration: none; word-break: break-word;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https:=
+//example.slack.com/x-15787619126-22045218838/img/email/slack_logo.png" sty=
+le=3D"-ms-interpolation-mode: bicubic; outline: none; text-decoration: none=
+; border: none; width: 120px; height: 36px; margin-left: -1.5rem;"></a>
+=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr></table></td>
+=09=09</tr><tr><td valign=3D"top" style=3D"border-collapse: collapse;">
+=09=09=09=09=09=09=09=09<table  cellpadding=3D"32" cellspacing=3D"0" border=
+=3D"0" align=3D"center"  style=3D"border-collapse: collapse; mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; background: white; border-radius: 0.5rem; m=
+argin-bottom: 1rem;"><tr><td width=3D"546" valign=3D"top" style=3D"border-c=
+ollapse: collapse;">
+=09=09=09=09=09=09=09<div style=3D"max-width: 600px; margin: 0 auto;">
+=09=09=09=09
+<div  style=3D"background: white; border-radius: 0.5rem; margin-bottom: 1re=
+m;">
+
+=09<p style=3D"font-size: 17px; line-height: 24px; margin: 0 0 16px;">Two-F=
+actor authentication has been successfully enabled for your account on <b>Z=
+endesk</b>. Don't forget to <a href=3D"https://example.slack.com/x-15787619=
+126-22045218838/account/settings#two_factor" style=3D"color: #439fe0; font-=
+weight: bold; text-decoration: none; word-break: break-word;">print a set o=
+f your backup codes</a> for safekeeping.</p>
+
+=09<p style=3D"font-size: 17px; line-height: 24px; margin: 0 0 16px;">If yo=
+u made this change, then you're all set! If you did not enable two-factor a=
+uthentication, please notify your team owner or admin immediately.</p>
+
+=09<p style=3D"font-size: 17px; line-height: 24px; margin: 0 0 16px;">If yo=
+u have questions on how to use two-factor authentication with your team, <a=
+ href=3D"https://slack.example.com/hc/en-us/articles/204509068-Enabling-two=
+-factor-authentication" style=3D"color: #439fe0; font-weight: bold; text-de=
+coration: none; word-break: break-word;">please visit our FAQ</a> or reach =
+out to us at <a href=3D"mailto:feedback@slack.com" style=3D"color: #439fe0;=
+ font-weight: bold; text-decoration: none; word-break: break-word;">feedbac=
+k@slack.com</a>.</p>
+</div>
+
+=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr></table></td>
+=09=09=09=09=09</tr><tr><td style=3D"border-collapse: collapse;">
+=09=09=09=09=09<table  width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" align=3D"center" style=3D"border-collapse: collapse; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; margin-top: 1rem; background: white; co=
+lor: #989EA6;"><tr><td style=3D"border-collapse: collapse; height: 5px; bac=
+kground-image: url('https://slack.global.ssl.fastly.net/66f9/img/email-ribb=
+on_@2x.png'); background-repeat: repeat-x; background-size: auto 5px;"></td=
+>
+=09=09=09=09=09=09</tr><tr><td valign=3D"top" align=3D"center" style=3D"bor=
+der-collapse: collapse; padding: 16px 8px 24px;">
+=09=09=09=09=09=09=09=09<div style=3D"max-width: 600px; margin: 0 auto;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p  style=3D"font-siz=
+e: 12px; line-height: 20px; margin: 0 0 16px; margin-top: 16px;">
+=09=09=09=09=09=09=09=09=09=09Made by <a href=3D"https://slack.com" style=
+=3D"color: #439fe0; font-weight: bold; text-decoration: none; word-break: b=
+reak-word;">Slack Technologies, Inc</a> =C2=A0=E2=80=A2=C2=A0=20
+=09=09=09=09=09=09=09=09=09=09<a href=3D"http://slackhq.com" style=3D"color=
+: #439fe0; font-weight: bold; text-decoration: none; word-break: break-word=
+;">Our Blog</a><br><a href=3D"#" style=3D"color: #989EA6; font-weight: norm=
+al; text-decoration: none; word-break: break-word; pointer-events: none;">1=
+55 5th Street, 6th Floor =C2=A0=E2=80=A2=C2=A0 San Francisco, CA =C2=A0=E2=
+=80=A2=C2=A0 94103</a>
+=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09</tr></table></td>
+=09=09=09</tr></table></body></html>
+
+
+--__slack_788900245__--

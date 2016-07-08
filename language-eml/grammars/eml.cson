@@ -1,0 +1,100 @@
+{
+  'scopeName': 'eml.mylanguage'
+  'name': 'EML (E-Mail MIME Message)'
+  'fileTypes': ['eml', 'email', 'mail', 'mime']
+  'patterns': [
+    # Emails
+    { 'match': '"[a-za-z0-9. \-]+"\s*&lt;[a-za-z0-9.\-]+\@[a-za-z0-9.\-]+&gt;', 'name': 'variable.other.eml' },
+    { 'match': '[a-za-z0-9.\-]*\s*&lt;[a-za-z0-9.\-]+\@[a-za-z0-9.\-]+&gt;', 'name': 'variable.other.eml' },
+    { 'match': '[a-za-z0-9.\-]+\@[a-za-z0-9.\-]+', 'name': 'variable.other.eml' },
+
+    { 'match': '^(?i)Content-Type: text\/plain;.*?(?=--)', 'name': 'markup.raw.eml' },
+    { 'match': '^(?i)Content-Type: text\/html;.*?(?=--)', 'name': 'markup.raw.eml' },
+
+    # Separator
+    { 'match': '^.*(?i)boundary\=.*__.*__"', 'name': 'keyword.control' },
+    { 'match': '^--.*', 'name': 'keyword.control' },
+
+    { 'match': '^.*(?i)authentication-results.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)bcc.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)cc.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)comments.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)content-disposition.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)content-transfer-encoding.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)content-type.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)date.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)delivered-to.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)delivery-date.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)dkim-signature.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)domainkey-signature.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)envelope-from.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)enverlope-to.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)from.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)in-reply-to.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)keywors.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)list-help.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)list-post.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)list-unsubscribe.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)message-id.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)mime-version.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)precedence.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)received-spf.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)received.*?:', 'name': 'constant.language.eml' }
+    { 'match': '^.*(?i)references.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)reply-to.*?:', 'name': 'constant.language.eml' },
+
+    # Resent Headers
+    { 'match': '^.*(?i)resent-bcc.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)resent-cc.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)resent-date.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)resent-from.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)resent-message-id.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)resent-reply-to.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)resent-sender.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)resent-to.*?:', 'name': 'constant.other.eml' },
+
+    { 'match': '^.*(?i)return-path.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)sender.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)subject.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)to.*?:', 'name': 'constant.language.eml' },
+
+    # X-Headers
+    { 'match': '^.*(?i)x-bulkmail.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-cmae-analysis.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-cmae-score.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-gm-message-state.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-google-dkim-signature.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-loop.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-mailgun-sid.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-mailing-list.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-mc-unique.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-mozilla-status.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-mozilla-status2.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-original-to.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-originating-email.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-originating-ip.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-received.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-sender.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-spam-checker-version.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-spam-level.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-spam-status.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-spam-zendesk-report.*?', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-spam-zendesk-score.*?', 'name': 'constant.other.eml' },
+
+    { 'match': '^(-)?--(--.*)?', 'name': 'comment.line.eml' },
+    { 'match': '^[|&gt;]*[\s_-]*[_-][_-][\s_-]*$">-', 'name': 'sign' },
+
+    # Quoted Text
+    { 'match': '^[|>].*', 'name': 'indent1' }
+    { 'match': '^[|>]\s*[|>].*', 'name': 'indent2' },
+    { 'match': '^[|>]\s*[|>]\s*[|>].*', 'name': 'indent3' },
+    { 'match': '^[|>]\s*[|>]\s*[|>]\s*[|>].*', 'name': 'indent4' },
+    { 'match': '^[|>]\s*[|>]\s*[|>]\s*[|>]\s*[|>].*', 'name': 'indent5' },
+    { 'match': '^[|>]\s*[|>]\s*[|>]\s*[|>]\s*[|>]\s*[|>].*', 'name': 'indent6' },
+
+    { 'match': '^[a-za-z0-9+=]+=$', 'name': 'string.unquoted' },
+
+    # UTF-8
+    { 'match': '=\d\d', 'name': 'string.other' }
+  ]
+}
