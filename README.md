@@ -17,6 +17,13 @@
 4. `cmd` + `shift` + `p` > "Window: Reload" > `enter`
 5. Repeat.
 
+## Release
+
+```
+
+apm publish patch # or minor, mayor
+```
+
 ## References
 
 This code was inspired by:
