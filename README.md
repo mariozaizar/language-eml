@@ -5,27 +5,31 @@
 
 Adds Syntax Highlighting for E-Mail files in Atom.
 
-## Install
+![screenshot](http://images/language-eml.png)
 
-`Settings` > `Install` > "language-eml" > `enter`
+## Supported Filetypes
+
+* `.eml`
+* `.email`
+* `.mail`
+* `.mime`
 
 ## Development
 
-Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.
+Contributions are greatly appreciated.
+Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.
 
-1. This script links the `language-eml` folder and your Atom packages directory (Ex, `/Users/mariozaiuzar/.atom/packages`).
-```sh
-./install.sh
-```
-2. Open `example.eml` file. Select `EML (E-Mail MIME Message)` as syntax (if need it)
-2. Do some changes on the code (Ex, `language-eml/grammars/eml.cson`).
-4. `cmd` + `shift` + `p` > "Window: Reload" > `enter`
-5. Repeat.
+1. Fork & clone from https://github.com/mariozaizar/language-eml.
+2. Run `./install.sh` to link the `language-eml` folder and your Atom packages directory (Ex, `/Users/mariozaiuzar/.atom/packages`).
+3. Enable the package on Atom (`Settings > Packages > EML > Install`).
+4. Open any email (like [example.eml](example.eml)). Select `EML (E-Mail MIME Message)` as syntax.
+5. Do some changes on the code (Ex, add more headers to `language-eml/grammars/eml.cson`).
+6. `cmd` + `shift` + `p` > "Window: Reload" > `enter`
+7. Test your changes.
 
 ## Release
 
 ```
-
 apm publish patch # or minor, mayor
 ```
 
@@ -37,3 +41,4 @@ This code was inspired by:
 - http://manual.macromates.com/en/language_grammars.html#naming_conventions
 - http://flight-manual.atom.io/#package-json
 - https://github.com/jgm/highlighting-kate/blob/master/xml/email.xml
+- http://www.phpclasses.org/browse/file/14672.html
