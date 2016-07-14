@@ -62,6 +62,8 @@
     { 'match': '^.*(?i)resent-to.*?:', 'name': 'constant.other.eml' },
 
     # X-Headers
+    { 'match': '^.*(?i)msmail-priority.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)priority.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-bulkmail.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-cmae-analysis.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-cmae-score.*?:', 'name': 'constant.other.eml' },
@@ -77,6 +79,7 @@
     { 'match': '^.*(?i)x-mailing-list.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-mc-unique.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-microsoft-antispam.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-mimeole.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-mozilla-status.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-mozilla-status2.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-ms-exchange-crosstenant-fromentityheader.*?:', 'name': 'constant.other.eml' },
@@ -100,10 +103,12 @@
     { 'match': '^.*(?i)x-spam-zendesk-report.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-spam-zendesk-score.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-tmn.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-virus-scanned.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-yahoo-newman-id.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-yahoo-newman-property.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-ymail-isg.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-ymail-osg.*?:', 'name': 'constant.other.eml' },
+
 
     { 'match': '^(-)?--(--.*)?', 'name': 'comment.line.eml' },
     { 'match': '^\s\*.*', 'name': 'comment.line.eml' },
