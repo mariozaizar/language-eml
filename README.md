@@ -1,12 +1,17 @@
+[![Build Status](https://travis-ci.org/mariozaizar/language-eml.svg?branch=master)](https://travis-ci.org/mariozaizar/language-eml)
+[![Dependency Status](https://david-dm.org/mariozaizar/language-eml.svg)](https://david-dm.org/mariozaizar/language-eml)
+
 # language-eml
 
-## Syntax Highlighting for E-Mail
+Adds Syntax Highlighting for E-Mail files in Atom.
 
 ## Install
 
 `Settings` > `Install` > "language-eml" > `enter`
 
 ## Development
+
+Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.
 
 1. This script links the `language-eml` folder and your Atom packages directory (Ex, `/Users/mariozaiuzar/.atom/packages`).
 ```sh
