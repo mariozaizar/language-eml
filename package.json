@@ -7,6 +7,19 @@
     "node": "*"
   },
   "dependencies": {},
+  "keywords": [
+    "eml",
+    "email",
+    "mail",
+    "mime",
+    "e-mail",
+    "RFC2045",
+    "RFC2046",
+    "RFC2047",
+    "RFC4288",
+    "RFC4289",
+    "RFC2049"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mariozaizar/language-eml.git"

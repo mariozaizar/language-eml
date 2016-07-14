@@ -28,6 +28,7 @@ This code was inspired by:
 
 Based on:
 - https://en.wikipedia.org/wiki/MIME
+- https://en.wikipedia.org/wiki/Email#Filename_extensions
 - http://flight-manual.atom.io/#package-json
 - https://www.sitepoint.com/how-to-write-a-syntax-highlighting-package-for-atom/
 - http://manual.macromates.com/en/language_grammars.html#naming_conventions
