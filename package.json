@@ -1,6 +1,6 @@
 {
   "name": "language-eml",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Syntax Highlighting for E-Mail",
   "engines": {
     "atom": "*",
