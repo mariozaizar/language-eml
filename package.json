@@ -3,7 +3,8 @@
   "version": "0.0.3",
   "description": "Syntax Highlighting for E-Mail",
   "engines": {
-    "atom": "*"
+    "atom": "*",
+    "node": "*"
   },
   "dependencies": {},
   "repository": {
@@ -13,5 +14,5 @@
   "bugs": {
     "url": "https://github.com/mariozaizar/language-eml/issues"
   },
-  "license": ""
+  "license": "https://github.com/mariozaizar/language-eml/blob/master/LICENSE"
 }

@@ -20,6 +20,7 @@
     { 'match': '^.*(?i)cc.*?:', 'name': 'constant.language.eml' },
     { 'match': '^.*(?i)comments.*?:', 'name': 'constant.language.eml' },
     { 'match': '^.*(?i)content-disposition.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^.*(?i)content-id.*?:', 'name': 'constant.language.eml' },
     { 'match': '^.*(?i)content-language.*?:', 'name': 'constant.language.eml' },
     { 'match': '^.*(?i)content-transfer-encoding.*?:', 'name': 'constant.language.eml' },
     { 'match': '^.*(?i)delivered-to.*?:', 'name': 'constant.language.eml' },
