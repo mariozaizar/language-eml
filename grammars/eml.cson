@@ -71,6 +71,7 @@
     { 'match': '^.*(?i)x-gm-message-state.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-google-dkim-signature.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-loop.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^.*(?i)x-mailer.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-mailgun-sid.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-mailing-list.*?:', 'name': 'constant.other.eml' },
     { 'match': '^.*(?i)x-mc-unique.*?:', 'name': 'constant.other.eml' },

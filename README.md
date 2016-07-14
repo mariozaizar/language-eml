@@ -5,7 +5,7 @@
 
 Adds Syntax Highlighting for E-Mail files in Atom.
 
-![screenshot](http://images/language-eml.png)
+![screen shot](https://cloud.githubusercontent.com/assets/164819/16852885/cf5d61a4-49be-11e6-9622-a3b4628f5f27.png)
 
 ## Supported Filetypes
 
