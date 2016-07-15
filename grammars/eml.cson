@@ -1,5 +1,5 @@
 {
-  'scopeName': 'eml.mylanguage'
+  'scopeName': 'text.eml.basic'
   'name': 'EML (E-Mail MIME Message)'
   'fileTypes': ['eml', 'email', 'mail', 'mime']
   'patterns': [

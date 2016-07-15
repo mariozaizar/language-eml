@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/mariozaizar/language-eml.svg?branch=master)](https://travis-ci.org/mariozaizar/language-eml)
 [![Dependency Status](https://david-dm.org/mariozaizar/language-eml.svg)](https://david-dm.org/mariozaizar/language-eml)
 
-# language-eml
+# EML language support in Atom
 
 Adds Syntax Highlighting for E-Mail files in Atom.
 

@@ -7,6 +7,9 @@
     "node": "*"
   },
   "dependencies": {},
+  "devDependencies": {
+    "atom-grammar-test": "^0.3.0"
+  },
   "keywords": [
     "eml",
     "email",
