@@ -8,16 +8,11 @@
     { 'match': '[a-zZ-Z0-9.\+\_\-]*\s*&lt;[a-zA-Z0-9.\-]+\@[a-zA-Z0-9.\-]+&gt;', 'name': 'variable.other.eml' },
     { 'match': '[a-zA-Z0-9.\+\_\-]+\@[a-zA-Z0-9.\-]+', 'name': 'variable.other.eml' },
 
-    { 'match': '(?i)text\/plain;', 'name': 'markup.raw.eml' },
-    { 'match': '(?i)text\/html;', 'name': 'markup.raw.eml' },
-
-    # Separator
-    { 'match': '\sboundary\=.*?', 'name': 'keyword.control' },
-    { 'match': '^--.*', 'name': 'keyword.control' },
-
+    # Headers
     { 'match': '^(?i)authentication-results.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)bcc.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)cc.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)charset.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)comments.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)content-disposition.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)content-id.*?:', 'name': 'constant.language.eml' },
@@ -79,6 +74,7 @@
     { 'match': '^(?i)x-forefront-antispam-report.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forefront-prvs.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-gm-message-state.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-gmail-received.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-google-dkim-signature.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-loop.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-mailer.*?:', 'name': 'constant.other.eml' },
@@ -124,9 +120,18 @@
     { 'match': '^(?i)x-ymail-isg.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-ymail-osg.*?:', 'name': 'constant.other.eml' },
 
+    # Specials
+    { 'match': '(?i)7bit', 'name': 'markup.raw.eml' },
+    { 'match': '(?i)base64', 'name': 'markup.raw.eml' },
+    { 'match': '(?i)multipart\/alternative', 'name': 'markup.raw.eml' },
+    { 'match': '(?i)multipart\/mixed', 'name': 'markup.raw.eml' },
+    { 'match': '(?i)text\/html', 'name': 'markup.raw.eml' },
+    { 'match': '(?i)text\/plain', 'name': 'markup.raw.eml' },
+    { 'match': '(?i)boundary', 'name': 'markup.raw.eml' },
+    { 'match': '^--.*', 'name': 'keyword.control' },
     { 'match': '^(-)?--(--.*)?', 'name': 'comment.line.eml' },
-    { 'match': '^\s\*.*', 'name': 'comment.line.eml' },
     { 'match': '^[|&gt;]*[\s_-]*[_-][_-][\s_-]*$">-', 'name': 'sign' },
+    { 'match': '^\s\*.*', 'name': 'comment.line.eml' },
 
     # Quoted Text
     { 'match': '^[|>].*', 'name': 'indent1' }
