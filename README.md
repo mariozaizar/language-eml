@@ -18,12 +18,25 @@ Adds Syntax Highlighting for E-Mail files in Atom.
 
 Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc. Follow our [Contributing guide][.github/CONTRIBUTING.md].
 
+## Screenshots
+
+*Headers single and multiline*
+![headers](https://cloud.githubusercontent.com/assets/164819/16891371/720981f0-4aad-11e6-889b-b74c6a78066f.png)
+
+*Encoded content*
+![encoded](https://cloud.githubusercontent.com/assets/164819/16891372/74aa786a-4aad-11e6-9a54-fc938523b554.png)
+
+*HTML part content*
+![html part](https://cloud.githubusercontent.com/assets/164819/16891369/6e8a13aa-4aad-11e6-8066-1bd24df3a8ff.png)
+
+*Example*
 ![screen shot](https://cloud.githubusercontent.com/assets/164819/16852885/cf5d61a4-49be-11e6-9622-a3b4628f5f27.png)
 
 ## References
 
 This code was inspired by:
 - https://github.com/atom/language-html
+- https://github.com/atom/language-ruby
 - https://github.com/jgm/highlighting-kate/blob/master/xml/email.xml
 
 Based on:
@@ -35,3 +48,4 @@ Based on:
 
 Thanks to:
 - http://www.phpclasses.org/browse/file/14672.html
+- http://stackoverflow.com/questions/475074/regex-to-parse-or-validate-base64-data
