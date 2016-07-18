@@ -77,6 +77,8 @@
     { 'match': '^(?i)x-forefront-antispam-report.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forefront-prvs.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forwarded-for.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-forwarded-for.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-forwarded-to.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forwarded-to.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-gm-message-state.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-gmail-received.*?:', 'name': 'constant.other.eml' },
