@@ -45,7 +45,7 @@
     { 'match': '^(?i)reply-to.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)return-path.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)sender.*?:', 'name': 'constant.language.eml' },
-    { 'match': '^(?i)sent.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)sent:.*?', 'name': 'constant.language.eml' },
     { 'match': '^(?i)subject.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)thread-index.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)thread-topic.*?:', 'name': 'constant.language.eml' },
