@@ -9,6 +9,7 @@
     { 'match': '[a-zA-Z0-9.\+\_\-]+\@[a-zA-Z0-9.\-]+', 'name': 'variable.other.eml' },
 
     # Headers
+    { 'match': '^(?i)accept-language.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)authentication-results.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)bcc.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)cc.*?:', 'name': 'constant.language.eml' },
@@ -44,6 +45,7 @@
     { 'match': '^(?i)reply-to.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)return-path.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)sender.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)sent.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)subject.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)thread-index.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)thread-topic.*?:', 'name': 'constant.language.eml' },
@@ -74,6 +76,8 @@
     { 'match': '^(?i)x-feedback-id.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forefront-antispam-report.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forefront-prvs.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-forwarded-for.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-forwarded-to.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-gm-message-state.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-gmail-received.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-google-dkim-signature.*?:', 'name': 'constant.other.eml' },
@@ -97,6 +101,7 @@
     { 'match': '^(?i)x-ms-has-attach.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-ms-office365-filtering-correlation-id.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-ms-tnef-correlator.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-original-authentication-results.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-original-to.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-originalarrivaltime.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-originating-email.*?:', 'name': 'constant.other.eml' },
