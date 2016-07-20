@@ -35,9 +35,10 @@ Contributions are greatly appreciated. Please fork this repository and open a pu
 ## References
 
 This code was inspired by:
+- https://github.com/jgm/highlighting-kate/blob/master/xml/email.xml
 - https://github.com/atom/language-html
 - https://github.com/atom/language-ruby
-- https://github.com/jgm/highlighting-kate/blob/master/xml/email.xml
+- https://github.com/atom/language-php
 
 Based on:
 - https://en.wikipedia.org/wiki/MIME
