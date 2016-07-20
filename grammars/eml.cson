@@ -1,3 +1,4 @@
+# CoffeeScript Object Notation (CSON)
 {
   'scopeName': 'text.eml.basic'
   'name': 'EML (E-Mail MIME Message)'
@@ -15,6 +16,8 @@
     { 'match': '^(?i)cc.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)charset.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)comments.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)content-class.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)content-description.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)content-disposition.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)content-id.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)content-language.*?:', 'name': 'constant.language.eml' },
@@ -26,8 +29,10 @@
     { 'match': '^(?i)dkim-signature.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)domainkey-signature.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)envelope-from.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)envelope-to.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)enverlope-to.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)from.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)importance.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)in-reply-to.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)keywors.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)list-help.*?:', 'name': 'constant.language.eml' },
@@ -74,6 +79,7 @@
     { 'match': '^(?i)x-exchange-antispam-report-cfa-test.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-failed-recipients.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-feedback-id.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-filtered.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forefront-antispam-report.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forefront-prvs.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-forwarded-for.*?:', 'name': 'constant.other.eml' },
@@ -85,6 +91,8 @@
     { 'match': '^(?i)x-google-dkim-signature.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-loop.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-mailer.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-mailguard-id.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-mailguard-uid.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-mailgun-sid.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-mailing-list.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-mandrill-user.*?:', 'name': 'constant.other.eml' },
@@ -116,6 +124,10 @@
     { 'match': '^(?i)x-source-args.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-source-dir.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-source.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-spam_bar.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-spam_report.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-spam_score_int.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-spam_score.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-spam-checker-version.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-spam-level.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-spam-status.*?:', 'name': 'constant.other.eml' },
