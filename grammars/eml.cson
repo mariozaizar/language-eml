@@ -109,6 +109,7 @@
     { 'match': '^(?i)x-ms-exchange-crosstenant-originalarrivaltime.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-ms-exchange-messagesentrepresentingtype.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-ms-exchange-transport-crosstenantheadersstamped.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)x-ms-exchange-transport-fromentityheader.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-ms-has-attach.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-ms-office365-filtering-correlation-id.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-ms-tnef-correlator.*?:', 'name': 'constant.other.eml' },
