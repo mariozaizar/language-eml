@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.org/mariozaizar/language-eml.svg?branch=master)](https://travis-ci.org/mariozaizar/language-eml)
 [![Dependency Status](https://david-dm.org/mariozaizar/language-eml.svg)](https://david-dm.org/mariozaizar/language-eml)
+[![GitHub issues](https://img.shields.io/github/issues/mariozaizar/language-eml.svg)](https://github.com/mariozaizar/language-eml/issues)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mariozaizar/language-eml/master/LICENSE.md)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/mariozaizar/language-eml.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 # EML language support in Atom
 
