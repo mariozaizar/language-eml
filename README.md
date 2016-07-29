@@ -2,7 +2,7 @@
 [![Dependency Status](https://david-dm.org/mariozaizar/language-eml.svg)](https://david-dm.org/mariozaizar/language-eml)
 [![GitHub issues](https://img.shields.io/github/issues/mariozaizar/language-eml.svg)](https://github.com/mariozaizar/language-eml/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mariozaizar/language-eml/master/LICENSE.md)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/mariozaizar/language-eml.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/mariozaizar/language-eml.svg?style=social)](https://twitter.com/mariozaizar)
 
 # EML language support in Atom
 
@@ -16,6 +16,10 @@ Adds Syntax Highlighting for E-Mail files in Atom.
 * `.email`
 * `.mail`
 * `.mime`
+
+### Note
+
+Sublime user? check this package: https://github.com/mariozaizar/eml-tmLanguage
 
 ## Development
 
