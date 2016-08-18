@@ -23,7 +23,7 @@ Sublime user? check this package: https://github.com/mariozaizar/eml-tmLanguage
 
 ## Development
 
-Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc. Follow our [Contributing guide][.github/CONTRIBUTING.md].
+Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc. Follow our [Contributing guide](.github/CONTRIBUTING.md).
 
 ## Screenshots
 
@@ -38,6 +38,9 @@ Contributions are greatly appreciated. Please fork this repository and open a pu
 
 *Example*
 ![screen shot](https://cloud.githubusercontent.com/assets/164819/16852885/cf5d61a4-49be-11e6-9622-a3b4628f5f27.png)
+
+*Running on Windows*
+![windows](https://cloud.githubusercontent.com/assets/164819/17358644/deda4e5e-5917-11e6-9580-f5c8cf309e22.png)
 
 ## References
 
