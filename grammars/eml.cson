@@ -12,6 +12,7 @@
     # Headers
     { 'match': '^(?i)accept-language.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)authentication-results.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)auto-submitted.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)bcc.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)cc.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)charset.*?:', 'name': 'constant.language.eml' },
@@ -31,6 +32,7 @@
     { 'match': '^(?i)envelope-from.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)envelope-to.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)enverlope-to.*?:', 'name': 'constant.language.eml' },
+    { 'match': '^(?i)errors-to.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)from.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)importance.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)in-reply-to.*?:', 'name': 'constant.language.eml' },
@@ -41,9 +43,9 @@
     { 'match': '^(?i)list-unsubscribe.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)message-id.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)mime-version.*?:', 'name': 'constant.language.eml' },
-    { 'match': '^(?i)msmail-priority.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)msmail-priority.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)precedence.*?:', 'name': 'constant.language.eml' },
-    { 'match': '^(?i)priority.*?:', 'name': 'constant.other.eml' },
+    { 'match': '^(?i)priority.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)received-spf.*?:', 'name': 'constant.language.eml' },
     { 'match': '^(?i)received.*?:', 'name': 'constant.language.eml' }
     { 'match': '^(?i)references.*?:', 'name': 'constant.language.eml' },
@@ -68,8 +70,6 @@
     { 'match': '^.*(?i)resent-to.*?:', 'name': 'constant.other.eml' },
 
     # X-Headers
-    { 'match': '^(?i)auto-submitted.*?:', 'name': 'constant.other.eml' },
-    { 'match': '^(?i)errors-to.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-antiabuse.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-auto-response-suppress.*?:', 'name': 'constant.other.eml' },
     { 'match': '^(?i)x-bulkmail.*?:', 'name': 'constant.other.eml' },
