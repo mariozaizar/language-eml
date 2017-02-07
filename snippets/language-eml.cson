@@ -1,0 +1,61 @@
+'.text.eml':
+  'E-Mail PlainText':
+    prefix: 'eml-plain'
+    body: '''
+To: "John Doe" <to@example.com>
+From: "Mario Z." <from@example.com>
+Subject: This is a PlainText email
+
+$2
+'''
+  'E-Mail HTML':
+    prefix: 'eml-html'
+    body: '''
+To: "John Doe" <to@example.com>
+From: "Mario Z." <from@example.com>
+Subject: This is a HTML email
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+  <title>This is a HTML email</title>
+</head>
+<body>
+  <p>$2</p>
+</body>
+</html>
+'''
+  'E-Mail MultiPart':
+    prefix: 'eml-multipart'
+    body: '''
+To: "John Doe" <to@example.com>
+From: "Mario Z." <from@example.com>
+Subject: This is a MultiPart email
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="random_multipart_separator";
+ charset=UTF-8
+
+--random_multipart_separator
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+$2
+
+--random_multipart_separator
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head></head>
+<body>
+  <strong>Hi,</strong>
+  <p>$2</p>
+</body>
+</html>
+
+--random_multipart_separator--
+'''

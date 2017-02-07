@@ -2,61 +2,35 @@
 [![Dependency Status](https://david-dm.org/mariozaizar/language-eml.svg)](https://david-dm.org/mariozaizar/language-eml)
 [![GitHub issues](https://img.shields.io/github/issues/mariozaizar/language-eml.svg)](https://github.com/mariozaizar/language-eml/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mariozaizar/language-eml/master/LICENSE.md)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/mariozaizar/language-eml.svg?style=social)](https://twitter.com/mariozaizar)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/mariozaizar/language-eml.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 # EML language support in Atom
 
 Adds Syntax Highlighting for E-Mail files in Atom.
 
-![screencast](https://cloud.githubusercontent.com/assets/164819/16854870/b7594628-49c7-11e6-865b-11b8ffce6494.gif)
+![colors mov](https://cloud.githubusercontent.com/assets/164819/22721738/5671f924-ed67-11e6-905f-979b6aba872e.gif)
 
-## Supported Filetypes
-
-* `.eml`
-* `.email`
-* `.mail`
-* `.mime`
-
-### Note
-
-Sublime user? check this package: https://github.com/mariozaizar/eml-tmLanguage
+![snippets mov](https://cloud.githubusercontent.com/assets/164819/22721643/de7bbb94-ed66-11e6-94a3-d96e43d846c3.gif)
 
 ## Development
 
-Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc. Follow our [Contributing guide](.github/CONTRIBUTING.md).
-
-## Screenshots
-
-*Headers single and multiline*
-![headers](https://cloud.githubusercontent.com/assets/164819/16891371/720981f0-4aad-11e6-889b-b74c6a78066f.png)
-
-*Encoded content*
-![encoded](https://cloud.githubusercontent.com/assets/164819/16891372/74aa786a-4aad-11e6-9a54-fc938523b554.png)
-
-*HTML part content*
-![html part](https://cloud.githubusercontent.com/assets/164819/16891369/6e8a13aa-4aad-11e6-8066-1bd24df3a8ff.png)
-
-*Example*
-![screen shot](https://cloud.githubusercontent.com/assets/164819/16852885/cf5d61a4-49be-11e6-9622-a3b4628f5f27.png)
-
-*Running on Windows*
-![windows](https://cloud.githubusercontent.com/assets/164819/17358644/deda4e5e-5917-11e6-9580-f5c8cf309e22.png)
+Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc. Follow our [Contributing guide][.github/CONTRIBUTING.md].
 
 ## References
-
-This code was inspired by:
-- https://github.com/jgm/highlighting-kate/blob/master/xml/email.xml
-- https://github.com/atom/language-html
-- https://github.com/atom/language-ruby
-- https://github.com/atom/language-php
 
 Based on:
 - https://en.wikipedia.org/wiki/MIME
 - https://en.wikipedia.org/wiki/Email#Filename_extensions
-- http://flight-manual.atom.io/#package-json
-- https://www.sitepoint.com/how-to-write-a-syntax-highlighting-package-for-atom/
-- http://manual.macromates.com/en/language_grammars.html#naming_conventions
+- https://atom.io/docs/latest/creating-a-package#menus for more details
+- https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+- https://atom.io/docs/latest/advanced/keymaps
 
-Thanks to:
-- http://www.phpclasses.org/browse/file/14672.html
-- http://stackoverflow.com/questions/475074/regex-to-parse-or-validate-base64-data
+### Screenshoots 
+
+![without](https://cloud.githubusercontent.com/assets/164819/22721528/1da1b1ee-ed66-11e6-8c02-55a393463d8c.png)
+
+![with](https://cloud.githubusercontent.com/assets/164819/22721530/21e3d30e-ed66-11e6-8a83-c22b5727319e.png)
+
+![snippets](https://cloud.githubusercontent.com/assets/164819/22721536/2706940c-ed66-11e6-83d8-fda55247663d.png)
+
+![snippets2](https://cloud.githubusercontent.com/assets/164819/22721541/2d784f7e-ed66-11e6-9f64-ff599efacee7.png)

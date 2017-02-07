@@ -3,6 +3,7 @@ To: Mario Zaizar <nobody@example.local>
 Subject: Testing Mario Zaizar' MIME E-mail composing and sending PHP class: HTML message
 From: nobody <nobody@example.org>
 Reply-To: nobody <nobody@example.org>
+X-Mailer: Zendesk Mailer
 Sender: nobody@example.org
 X-Mailer: http://www.phpclasses.org/mimemessage $Revision: 1.63 $ (mail)
 MIME-Version: 1.0
@@ -25,6 +26,10 @@ Content-Transfer-Encoding: quoted-printable
 
 This is an HTML message. Please use an HTML capable mail program to read
 this message.
+
+> First level quote.
+> > Second level quote.
+> > > Third level quote.
 
 --69c1683a3ee16ef7cf16edd700694a2f
 Content-Type: text/html; charset=ISO-8859-1
@@ -164,7 +169,6 @@ Content-Type: text/plain; name="attachment.txt"
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="attachment.txt"
 
-VGhpcyBpcyBqdXN0IGEgcGxhaW4gdGV4dCBhdHRhY2htZW50IGZpbGUgbmFtZWQgYXR0YWNobWVu
-dC50eHQgLg==
+VGhpcyBpcyBqdXN0IGEgcGxhaW4gdGV4dCBhdHRhY2htZW50IGZpbGUgbmFtZWQgYXR0YWNobWVudC50eHQgLg==
 
 --652b8c4dcb00cdcdda1e16af36781caf--
