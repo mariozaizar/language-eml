@@ -1,6 +1,7 @@
 path = require 'path'
 grammarTest = require 'atom-grammar-test'
 
+# TODO:
 describe 'HTML grammar', ->
   grammar = null
 

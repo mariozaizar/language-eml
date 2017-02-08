@@ -2,7 +2,7 @@
 
 Describe your changes made on this PR.
 
-### Steps to reproduce
+### Steps
 
 1. Include screenshoots (Before/After)
 2. Attach example files if possible.
