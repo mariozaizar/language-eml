@@ -1,0 +1,4 @@
+".basic.eml.text":
+  editor:
+    # NOTE: RFC2821 says each line MUST < 998 chars, and SHOULD < 78 characters, excluding the CRLF.
+    preferredLineLength: 78
