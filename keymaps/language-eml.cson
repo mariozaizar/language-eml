@@ -1,6 +1,5 @@
-# TODO:
-# 'atom-workspace':
-#   'ctrl-alt-e': 'language-eml:base64-decode'
+'atom-workspace':
+  'ctrl-shift-w': 'language-eml:unwrap'
 
 # NOTE: Only available for EML files.
 # 'atom-text-editor[data-grammar~=eml]':

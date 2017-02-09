@@ -1,15 +1,18 @@
+# Atom > Packages > E-Mail (EML) submenus
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
       'label': 'E-Mail (EML)'
       'submenu': [
-        #TODO:
+        {
+          'label': 'Unwrap quoted-printable lines',
+          'command': 'language-eml:unwrap'
+        }
         # {
         #   'label': 'Decode base64 multiparts',
         #   'command': 'language-eml:base64-decode'
-        # }
-        # TODO:
+        # },
         # {
         #   'label': 'Decode quoted-printable multiparts',
         #   'command': 'language-eml:quoted-printable-decode'
@@ -20,20 +23,22 @@
 ]
 
 'context-menu': [
-  # NOTE: When user does right-click on editor.
-  # 'atom-text-editor': [
+  # NOTE: When user does right-click on a selected text.
+  'atom-text-editor': [
+    {
+      'label': 'Unwrap quoted-printable lines',
+      'command': 'language-eml:unwrap'
+    }
+  ]
+
+  # NOTE: When user does right-click on a file.
+  # '.tree-view .file > .name': [
   #   {
   #     'label': 'Decode base64 multiparts',
   #     'command': 'language-eml:base64-decode'
   #   }
   # ]
-  #
-  # NOTE: When user does right-click on a file.
-  # '.tree-view .file > .name': [
-  #   {
-  #   }
-  # ]
-  #
+
   # NOTE: When user does right-click on a directory.
   # '.tree-view .directory > .header > .name': [
   #   {
