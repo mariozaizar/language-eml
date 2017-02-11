@@ -9,7 +9,6 @@
   },
   "description": "E-Mail (EML) package for Atom",
   "devDependencies": {
-    "atom-grammar-test": "^0.3.0",
     "html-entities": "^1.1.2",
     "string": "^3.0.0"
   },

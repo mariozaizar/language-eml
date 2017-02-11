@@ -1,6 +1,6 @@
 #!/bin/sh
 
-INSTALL_PATH=$HOME/.atom/dev/packages;
+INSTALL_PATH=$HOME/.atom/packages;
 mkdir -p $INSTALL_PATH;
 
 PACKAGE_PATH=$INSTALL_PATH/language-eml;

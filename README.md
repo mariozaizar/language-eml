@@ -18,14 +18,17 @@ Contributions are greatly appreciated. Please fork this repository and open a pu
 
 ## References
 
-Based on:
+E-Mail:
 - https://en.wikipedia.org/wiki/MIME
 - https://en.wikipedia.org/wiki/Email#Filename_extensions
+
+Atom:
+- http://flight-manual.atom.io/
+- https://atom.io/docs/api
 - https://atom.io/docs/latest/creating-a-package#menus for more details
-- https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
 - https://atom.io/docs/latest/advanced/keymaps
 
-### Screenshoots 
+### Screenshoots
 
 ![without](https://cloud.githubusercontent.com/assets/164819/22721528/1da1b1ee-ed66-11e6-8c02-55a393463d8c.png)
 
