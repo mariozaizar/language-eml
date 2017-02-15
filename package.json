@@ -1,41 +1,4 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "C:\\Users\\Mario\\AppData\\Local\\Temp\\d-117023-1828-1ovzzrk\\package.tgz",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "C:\\Users\\Mario\\AppData\\Local\\Temp\\d-117023-1828-1ovzzrk\\package.tgz",
-        "spec": "C:\\Users\\Mario\\AppData\\Local\\Temp\\d-117023-1828-1ovzzrk\\package.tgz",
-        "type": "local"
-      },
-      "C:\\Users\\Mario\\AppData\\Local\\Temp\\apm-install-dir-117023-1828-z88c1p"
-    ]
-  ],
-  "_from": "..\\d-117023-1828-1ovzzrk\\package.tgz",
-  "_id": "language-eml@0.1.3",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/language-eml",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "C:\\Users\\Mario\\AppData\\Local\\Temp\\d-117023-1828-1ovzzrk\\package.tgz",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "C:\\Users\\Mario\\AppData\\Local\\Temp\\d-117023-1828-1ovzzrk\\package.tgz",
-    "spec": "C:\\Users\\Mario\\AppData\\Local\\Temp\\d-117023-1828-1ovzzrk\\package.tgz",
-    "type": "local"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "file:..\\d-117023-1828-1ovzzrk\\package.tgz",
-  "_shasum": "8f1aeedd7d490e5af113350a0fb2d63ddc4d9494",
-  "_shrinkwrap": null,
-  "_spec": "C:\\Users\\Mario\\AppData\\Local\\Temp\\d-117023-1828-1ovzzrk\\package.tgz",
-  "_where": "C:\\Users\\Mario\\AppData\\Local\\Temp\\apm-install-dir-117023-1828-z88c1p",
   "bugs": {
     "url": "https://github.com/mariozaizar/language-eml/issues"
   },
@@ -44,15 +7,16 @@
     "html-entities": "^1.1.2",
     "string": "^3.0.0"
   },
-  "description": "Syntax Highlighting for E-Mail",
+  "description": "E-Mail (EML) package for Atom",
   "devDependencies": {
-    "atom-grammar-test": "^0.3.0"
+    "html-entities": "^1.1.2",
+    "string": "^3.0.0"
   },
   "engines": {
     "atom": ">0.50.0",
     "node": "*"
   },
-  "homepage": "https://github.com/mariozaizar/language-eml#readme",
+  "homepage": "https://github.com/mariozaizar/language-eml",
   "keywords": [
     "eml",
     "email",
@@ -64,16 +28,16 @@
     "RFC2047",
     "RFC4288",
     "RFC4289",
-    "RFC2049"
+    "RFC2049",
+    "RFC2821"
   ],
-  "license": "MIT",
+  "license": "LICENSE.md",
   "name": "language-eml",
   "optionalDependencies": {},
-  "readme": "[![Build Status](https://travis-ci.org/mariozaizar/language-eml.svg?branch=master)](https://travis-ci.org/mariozaizar/language-eml)\n[![Dependency Status](https://david-dm.org/mariozaizar/language-eml.svg)](https://david-dm.org/mariozaizar/language-eml)\n[![GitHub issues](https://img.shields.io/github/issues/mariozaizar/language-eml.svg)](https://github.com/mariozaizar/language-eml/issues)\n[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mariozaizar/language-eml/master/LICENSE.md)\n[![Twitter](https://img.shields.io/twitter/url/https/github.com/mariozaizar/language-eml.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)\n\n# EML language support in Atom\n\nAdds Syntax Highlighting for E-Mail files in Atom.\n\n![screencast](https://cloud.githubusercontent.com/assets/164819/16854870/b7594628-49c7-11e6-865b-11b8ffce6494.gif)\n\n## Supported Filetypes\n\n* `.eml`\n* `.email`\n* `.mail`\n* `.mime`\n\n## Development\n\nContributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc. Follow our [Contributing guide][.github/CONTRIBUTING.md].\n\n## Screenshots\n\n*Headers single and multiline*\n![headers](https://cloud.githubusercontent.com/assets/164819/16891371/720981f0-4aad-11e6-889b-b74c6a78066f.png)\n\n*Encoded content*\n![encoded](https://cloud.githubusercontent.com/assets/164819/16891372/74aa786a-4aad-11e6-9a54-fc938523b554.png)\n\n*HTML part content*\n![html part](https://cloud.githubusercontent.com/assets/164819/16891369/6e8a13aa-4aad-11e6-8066-1bd24df3a8ff.png)\n\n*Example*\n![screen shot](https://cloud.githubusercontent.com/assets/164819/16852885/cf5d61a4-49be-11e6-9622-a3b4628f5f27.png)\n\n## References\n\nThis code was inspired by:\n- https://github.com/jgm/highlighting-kate/blob/master/xml/email.xml\n- https://github.com/atom/language-html\n- https://github.com/atom/language-ruby\n- https://github.com/atom/language-php\n\nBased on:\n- https://en.wikipedia.org/wiki/MIME\n- https://en.wikipedia.org/wiki/Email#Filename_extensions\n- http://flight-manual.atom.io/#package-json\n- https://www.sitepoint.com/how-to-write-a-syntax-highlighting-package-for-atom/\n- http://manual.macromates.com/en/language_grammars.html#naming_conventions\n\nThanks to:\n- http://www.phpclasses.org/browse/file/14672.html\n- http://stackoverflow.com/questions/475074/regex-to-parse-or-validate-base64-data\n",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mariozaizar/language-eml.git"
   },
-  "version": "0.3.0"
+  "version": "0.3.1"
 }

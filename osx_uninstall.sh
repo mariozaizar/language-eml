@@ -1,6 +1,5 @@
 #!/bin/sh
 
-INSTALL_PATH=$HOME/.atom/packages/language-eml-dev
-rm $INSTALL_PATH
+PACKAGE_PATH=$HOME/.atom/packages/language-eml
 
-echo "$INSTALL_PATH was removed."
+rm $PACKAGE_PATH && echo "$PACKAGE_PATH link got removed." || echo "Can't remove $PACKAGE_PATH"

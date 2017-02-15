@@ -1,42 +1,37 @@
+'context-menu':
+  'atom-text-editor': [
+    'label': 'E-Mail (EML)'
+    'submenu': [
+      {
+        'label': 'Base64 decode',
+        'command': 'language-eml:base64-decode'
+      },
+      {
+        'label': 'Base64 encode',
+        'command': 'language-eml:base64-encode'
+      }
+    ]
+  ]
+
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
       'label': 'E-Mail (EML)'
       'submenu': [
-        #TODO:
-        # {
-        #   'label': 'Decode base64 multiparts',
-        #   'command': 'language-eml:base64-decode'
-        # }
-        # TODO:
-        # {
-        #   'label': 'Decode quoted-printable multiparts',
-        #   'command': 'language-eml:quoted-printable-decode'
-        # }
+        {
+          'label': 'Base64 Toggle',
+          'command': 'language-eml:base64-toggle'
+        },
+        {
+          'label': 'Base64 decode',
+          'command': 'language-eml:base64-decode'
+        },
+        {
+          'label': 'Base64 encode',
+          'command': 'language-eml:base64-encode'
+        }
       ]
     ]
   }
-]
-
-'context-menu': [
-  # NOTE: When user does right-click on editor.
-  # 'atom-text-editor': [
-  #   {
-  #     'label': 'Decode base64 multiparts',
-  #     'command': 'language-eml:base64-decode'
-  #   }
-  # ]
-  #
-  # NOTE: When user does right-click on a file.
-  # '.tree-view .file > .name': [
-  #   {
-  #   }
-  # ]
-  #
-  # NOTE: When user does right-click on a directory.
-  # '.tree-view .directory > .header > .name': [
-  #   {
-  #   }
-  # ]
 ]
