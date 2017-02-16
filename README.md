@@ -6,13 +6,17 @@
 
 # EML language support in Atom
 
-![colors mov](https://cloud.githubusercontent.com/assets/164819/22721738/5671f924-ed67-11e6-905f-979b6aba872e.gif)
+![eml install](https://cloud.githubusercontent.com/assets/164819/23042201/988b15f2-f44c-11e6-833a-99e6503718b9.gif)
 
-![snippets mov](https://cloud.githubusercontent.com/assets/164819/22721643/de7bbb94-ed66-11e6-94a3-d96e43d846c3.gif)
+![eml grammar](https://cloud.githubusercontent.com/assets/164819/23042206/9e354360-f44c-11e6-92d4-5ea9e90e2af6.gif)
 
-![example1](https://cloud.githubusercontent.com/assets/164819/23041129/ae84d400-f448-11e6-9cc7-12595aaf5cd9.gif)
+![eml snippets basic](https://cloud.githubusercontent.com/assets/164819/23042214/a409a538-f44c-11e6-8182-7c11a0466a78.gif)
 
-![example2](https://cloud.githubusercontent.com/assets/164819/23041135/b66dbe48-f448-11e6-9ca0-a02e5f4792c6.gif)
+![eml snippets multipart](https://cloud.githubusercontent.com/assets/164819/23042220/a6e7c5f0-f44c-11e6-961e-4e78a0bca9f4.gif)
+
+![eml decode base64](https://cloud.githubusercontent.com/assets/164819/23042222/aa6dc774-f44c-11e6-8645-f0428c2b4577.gif)
+
+![eml settings](https://cloud.githubusercontent.com/assets/164819/23042236/b241d3e6-f44c-11e6-9ec6-be14742cd6de.gif)
 
 ## Development
 
