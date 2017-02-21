@@ -4,13 +4,11 @@
   },
   "main": "./lib/language-eml",
   "dependencies": {
-    "html-entities": "^1.1.2",
-    "string": "^3.0.0"
+    "quoted-printable": "^1.0.1"
   },
   "description": "Email (EML) package for Atom",
   "devDependencies": {
-    "html-entities": "^1.1.2",
-    "string": "^3.0.0"
+    "quoted-printable": "^1.0.1"
   },
   "engines": {
     "atom": ">0.50.0",

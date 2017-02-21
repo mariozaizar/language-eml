@@ -16,7 +16,16 @@
 
 ![eml decode base64](https://cloud.githubusercontent.com/assets/164819/23042222/aa6dc774-f44c-11e6-8645-f0428c2b4577.gif)
 
+![eml quote-printable decode](https://cloud.githubusercontent.com/assets/164819/23193032/a48cb3b6-f85b-11e6-8e86-1da3ddff09bf.gif)
+
 ![eml settings](https://cloud.githubusercontent.com/assets/164819/23042236/b241d3e6-f44c-11e6-9ec6-be14742cd6de.gif)
+
+## Features
+
+* Email language support in Atom.
+* EML Snippets: Basic, PlainText, HTML.
+* Decode/Encode base64 parts.
+* Decode/Encode quoted-printable parts.
 
 ## Development
 
@@ -33,5 +42,8 @@ Email:
 Atom:
 - http://flight-manual.atom.io/
 - https://atom.io/docs/api
-- https://atom.io/docs/latest/creating-a-package#menus for more details
-- https://atom.io/docs/latest/advanced/keymaps
+- https://github.com/extesy/atom-text-manipulation
+- https://github.com/atom/autocomplete-plus/wiki/Provider-API
+
+Node:
+- https://github.com/mathiasbynens/quoted-printable
