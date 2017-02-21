@@ -1,5 +1,5 @@
 '.text.eml':
-  'E-Mail PlainText':
+  'Email PlainText':
     prefix: 'eml-plain'
     body: '''
 To: "John Doe" <to@example.com>
@@ -8,7 +8,7 @@ Subject: This is a PlainText email
 
 $2
 '''
-  'E-Mail HTML':
+  'Email HTML':
     prefix: 'eml-html'
     body: '''
 To: "John Doe" <to@example.com>
@@ -26,7 +26,7 @@ Content-Transfer-Encoding: 7bit
 </body>
 </html>
 '''
-  'E-Mail MultiPart':
+  'Email MultiPart':
     prefix: 'eml-multipart'
     body: '''
 To: "John Doe" <to@example.com>

@@ -1,6 +1,6 @@
 'context-menu':
   'atom-text-editor': [
-    'label': 'E-Mail (EML)'
+    'label': 'Email (EML)'
     'submenu': [
       {
         'label': 'Base64 decode',
@@ -17,7 +17,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'E-Mail (EML)'
+      'label': 'Email (EML)'
       'submenu': [
         {
           'label': 'Base64 Toggle',

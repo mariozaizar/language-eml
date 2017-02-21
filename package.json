@@ -7,7 +7,7 @@
     "html-entities": "^1.1.2",
     "string": "^3.0.0"
   },
-  "description": "E-Mail (EML) package for Atom",
+  "description": "Email (EML) package for Atom",
   "devDependencies": {
     "html-entities": "^1.1.2",
     "string": "^3.0.0"
@@ -19,17 +19,13 @@
   "homepage": "https://github.com/mariozaizar/language-eml",
   "keywords": [
     "eml",
+    "emlx",
+    "msg",
+    "mbx",
     "email",
     "mail",
     "mime",
-    "e-mail",
-    "RFC2045",
-    "RFC2046",
-    "RFC2047",
-    "RFC4288",
-    "RFC4289",
-    "RFC2049",
-    "RFC2821"
+    "e-mail"
   ],
   "license": "LICENSE.md",
   "name": "language-eml",

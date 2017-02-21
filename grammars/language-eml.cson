@@ -1,7 +1,7 @@
 # CoffeeScript Object Notation (CSON)
 {
   'scopeName': 'text.eml.basic'
-  'name': 'E-Mail (EML)'
+  'name': 'Email (EML)'
   'fileTypes': ['eml', 'email', 'mail', 'mime']
   'patterns': [
     # Email addresses

@@ -24,8 +24,10 @@ Contributions are greatly appreciated. Please fork this repository and open a pu
 
 ## References
 
-E-Mail:
+Email:
+- https://en.wikipedia.org/wiki/Email
 - https://en.wikipedia.org/wiki/MIME
+- https://en.wikipedia.org/wiki/Quoted_printable
 - https://en.wikipedia.org/wiki/Email#Filename_extensions
 
 Atom:
