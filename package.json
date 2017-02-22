@@ -16,16 +16,17 @@
   },
   "homepage": "https://github.com/mariozaizar/language-eml",
   "keywords": [
+    "email",
+    "e-mail",
+    "mail",
     "eml",
     "emlx",
     "msg",
     "mbx",
-    "email",
-    "mail",
-    "mime",
-    "e-mail"
+    "mime"
   ],
-  "license": "LICENSE.md",
+  "license": "MIT",
+  "licenseFilename": "LICENSE.md",
   "name": "language-eml",
   "optionalDependencies": {},
   "readmeFilename": "README.md",
