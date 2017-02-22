@@ -54,5 +54,5 @@ isBase64Encoded = (text) ->
     false
 
 log = (message) ->
-  # TODO: enable only when devtools is enabled
-  # console.log("EML: #{message}")
+  if atom.inDevMode()
+    console.log("EML: #{message}")
