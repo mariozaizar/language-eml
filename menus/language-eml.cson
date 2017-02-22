@@ -11,11 +11,11 @@
         'command': 'language-eml:base64-encode'
       },
       {
-        'label': 'Quoted-Printable decode decode',
+        'label': 'Quoted-Printable decode',
         'command': 'language-eml:quoted-printable-decode'
       },
       {
-        'label': 'Quoted-Printable decode encode',
+        'label': 'Quoted-Printable encode',
         'command': 'language-eml:quoted-printable-encode'
       }
     ]
@@ -40,11 +40,11 @@
           'command': 'language-eml:base64-encode'
         },
         {
-          'label': 'Quoted-Printable decode decode',
+          'label': 'Quoted-Printable decode',
           'command': 'language-eml:quoted-printable-decode'
         },
         {
-          'label': 'Quoted-Printable decode encode',
+          'label': 'Quoted-Printable encode',
           'command': 'language-eml:quoted-printable-encode'
         }
       ]
