@@ -1,11 +1,11 @@
 # NOTE: Available for everyone.
 'atom-workspace':
+  'ctrl-shift-t': 'language-eml:base64-toggle'
   # 'ctrl-shift-d': 'language-eml:base64-decode'
   # 'ctrl-shift-e': 'language-eml:base64-encode'
-  'ctrl-shift-t': 'language-eml:base64-toggle'
 
 # NOTE: Available for EML files.
 'atom-text-editor[data-grammar~=eml]':
-  'ctrl-shift-d': 'language-eml:base64-decode'
-  'ctrl-shift-e': 'language-eml:base64-encode'
   'ctrl-shift-t': 'language-eml:base64-toggle'
+  # 'ctrl-shift-d': 'language-eml:base64-decode'
+  # 'ctrl-shift-e': 'language-eml:base64-encode'

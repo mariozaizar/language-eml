@@ -2,11 +2,11 @@
 '*':
   editor:
     invisibles: {}
-    preferredLineLength: 77
+    preferredLineLength: 78
     showInvisibles: true
 
 'text.eml.basic':
   editor:
     invisibles: {}
-    preferredLineLength: 77
+    preferredLineLength: 78
     showInvisibles: true

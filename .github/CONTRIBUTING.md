@@ -4,6 +4,13 @@
 - Send Pull Request. Get a +1.
 - Get your changes merged.
 
+## Dependencies
+
+```shell
+npm install
+apm rebuild
+```
+
 ## Release
 
 ```shell

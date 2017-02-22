@@ -9,6 +9,14 @@
       {
         'label': 'Base64 encode',
         'command': 'language-eml:base64-encode'
+      },
+      {
+        'label': 'Quoted-Printable decode decode',
+        'command': 'language-eml:quoted-printable-decode'
+      },
+      {
+        'label': 'Quoted-Printable decode encode',
+        'command': 'language-eml:quoted-printable-encode'
       }
     ]
   ]
@@ -19,10 +27,10 @@
     'submenu': [
       'label': 'Email (EML)'
       'submenu': [
-        {
-          'label': 'Base64 Toggle',
-          'command': 'language-eml:base64-toggle'
-        },
+        # {
+        #   'label': 'Base64 Toggle',
+        #   'command': 'language-eml:base64-toggle'
+        # },
         {
           'label': 'Base64 decode',
           'command': 'language-eml:base64-decode'
@@ -30,6 +38,14 @@
         {
           'label': 'Base64 encode',
           'command': 'language-eml:base64-encode'
+        },
+        {
+          'label': 'Quoted-Printable decode decode',
+          'command': 'language-eml:quoted-printable-decode'
+        },
+        {
+          'label': 'Quoted-Printable decode encode',
+          'command': 'language-eml:quoted-printable-encode'
         }
       ]
     ]
