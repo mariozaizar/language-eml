@@ -1,7 +1,9 @@
 ### Contributing
 
+> :bulb: Sublime Text users, check: https://github.com/mariozaizar/eml-tmLanguage
+
 - Fork this repo.
-- Create new branch and do the changes.
+- Create a new branch and commit the changes.
 - Test manually and add specs.
 - Send Pull Request. Get a +1 from the core team.
 - Get your changes merged.
@@ -9,8 +11,8 @@
 ## Dependencies
 
 ```shell
-npm install
-apm rebuild
+npm install # Node package manager install
+apm rebuild # Atom package manager rebuild
 ```
 
 ## Release
