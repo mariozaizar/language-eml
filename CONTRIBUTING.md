@@ -1,7 +1,9 @@
 ### Contributing
 
-- Test your changes manually and add specs.
-- Send Pull Request. Get a +1.
+- Fork this repo.
+- Create new branch and do the changes.
+- Test manually and add specs.
+- Send Pull Request. Get a +1 from the core team.
 - Get your changes merged.
 
 ## Dependencies
