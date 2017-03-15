@@ -23,7 +23,8 @@
     "emlx",
     "msg",
     "mbx",
-    "mime"
+    "mime",
+    "message/rfc822"
   ],
   "license": "MIT",
   "licenseFilename": "LICENSE.md",
