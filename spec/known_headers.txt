@@ -110,6 +110,7 @@ downgraded-sender
 downgraded-to
 encoding
 encrypted
+envelope-from
 etag
 expect
 expires
@@ -153,6 +154,7 @@ list-subscribe
 list-unsubscribe
 location
 lock-token
+mail-from
 man
 max-forwards
 memento-datetime

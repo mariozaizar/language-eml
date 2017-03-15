@@ -18,6 +18,12 @@
       'name': 'variable.other.eml'
     },
 
+    # "Email From" Headers
+    {
+      'match': '^(?i)(envelope-from|return-path|mail-from|from):',
+      'name': 'constant.language.header'
+    },
+
     # Required headers
     {
       'match': '^(?i)(from|date|to|subject|cc|content-type|precedence|message-id|in-reply-to|references|reply-to|sender|archived-at|x-cmae-virus|\d*zendesk\d*):',
