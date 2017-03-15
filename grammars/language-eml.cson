@@ -18,9 +18,9 @@
       'name': 'variable.other.eml'
     },
 
-    # Headers VIP
+    # Required headers
     {
-      'match': '^(?i)(message-id|to|from|reply-to|\d*zendesk\d*):',
+      'match': '^(?i)(from|date|to|subject|cc|content-type|precedence|message-id|in-reply-to|references|reply-to|sender|archived-at|x-cmae-virus|\d*zendesk\d*):',
       'name': 'constant.language.header'
     },
 
