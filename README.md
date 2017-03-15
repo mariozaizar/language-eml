@@ -18,6 +18,7 @@ Adds syntax highlighting, snippets, shortcuts, and commands to Email files in At
   * [Multipart email template](eml-snippets-multipart).
   * Attachments email template.
 * Commands:
+  * [Preview email](eml-preview).
   * [To decode/encode base64](eml-decode-base64).
   * [To decode/encode quoted-printable](eml-quote-printable-decode).
 
@@ -42,17 +43,20 @@ Email:
 - Base64 encoding: https://en.wikipedia.org/wiki/Base64
 - Content Media Types: http://www.iana.org/assignments/media-types/media-types.xhtml
 
-Atom related:
+Atom and Node related:
 - http://flight-manual.atom.io/
 - https://atom.io/docs/api
 - https://github.com/extesy/atom-text-manipulation
 - https://github.com/atom/autocomplete-plus/wiki/Provider-API
 - https://github.com/sonim1/regex-filter-and-generator
-
-Node related:
 - https://github.com/mathiasbynens/quoted-printable
 
 Misc:
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+- https://github.com/leemunroe/responsive-html-email-template
+- https://templates.mailchimp.com/
+
+Tools:
 - Email Header Analyzer: https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx
 - MIME checker: http://mime.ritey.com/
 
@@ -85,6 +89,9 @@ Ym9keSBvZiB0aGUgbWVzc2FnZS48L3A+CiAgPC9ib2R5Pgo8L2h0bWw+Cg==
 
 *[Syntax highlighting](#eml-grammar)*
 ![eml grammar](https://cloud.githubusercontent.com/assets/164819/23042206/9e354360-f44c-11e6-92d4-5ea9e90e2af6.gif)
+
+*[Preview email](#eml-preview)*
+![eml preview]()
 
 *[Plain-Text email template](eml-snippets-basic)*
 ![eml snippets basic](https://cloud.githubusercontent.com/assets/164819/23042214/a409a538-f44c-11e6-8182-7c11a0466a78.gif)

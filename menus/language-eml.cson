@@ -3,6 +3,10 @@
     'label': 'Email (EML)'
     'submenu': [
       {
+        'label': 'Preview HTML body',
+        'command': 'language-eml:html-preview'
+      }
+      {
         'label': 'Base64 decode',
         'command': 'language-eml:base64-decode'
       },
@@ -27,10 +31,10 @@
     'submenu': [
       'label': 'Email (EML)'
       'submenu': [
-        # {
-        #   'label': 'Base64 Toggle',
-        #   'command': 'language-eml:base64-toggle'
-        # },
+        {
+          'label': 'Preview HTML body',
+          'command': 'language-eml:html-preview'
+        },
         {
           'label': 'Base64 decode',
           'command': 'language-eml:base64-decode'

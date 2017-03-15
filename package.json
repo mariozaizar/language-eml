@@ -2,12 +2,14 @@
   "bugs": {
     "url": "https://github.com/mariozaizar/language-eml/issues"
   },
-  "main": "./lib/language-eml",
+  "main": "./lib/language-eml-preview.js",
   "dependencies": {
+    "atom-space-pen-views": "^2.0.5",
     "quoted-printable": "^1.0.1"
   },
   "description": "Email (EML) package for Atom",
   "devDependencies": {
+    "atom-space-pen-views": "^2.0.5",
     "quoted-printable": "^1.0.1"
   },
   "engines": {
