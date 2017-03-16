@@ -1,9 +1,11 @@
+# Atom & Internal
 {CompositeDisposable} = require 'atom'
-EMLView = require('./language-eml-view')
+EMLView = require './language-eml-view'
 
-url = require('url')
-utf8 = require('utf8')
-quotedPrintable = require('quoted-printable')
+# External
+url = require 'url'
+utf8 = require 'utf8'
+quotedPrintable = require 'quoted-printable'
 
 AtomPanelView = null
 
