@@ -15,7 +15,6 @@ module.exports =
     @subscriptions.dispose()
 
   activate: ->
-    atom.commands.add 'atom-workspace', 'language-eml:base64-toggle', => @convert @base64Toggle
     atom.commands.add 'atom-workspace', 'language-eml:base64-decode', => @convert @base64Decode
     atom.commands.add 'atom-workspace', 'language-eml:base64-encode', => @convert @base64Encode
     log "Base64 activated"
@@ -26,8 +25,8 @@ module.exports =
 
     atom.workspace.addOpener(@emlOpener)
     @subscriptions = new CompositeDisposable()
-    @subscriptions.add atom.commands.add 'atom-workspace', 'language-eml:html-preview', => @openPane()
-    log "Preview HTML activated"
+    @subscriptions.add atom.commands.add 'atom-workspace', 'language-eml:email-preview', => @openPane()
+    log "Email Preview activated"
 
   ###############################################################
   emlOpener: (uri) ->
@@ -84,12 +83,6 @@ module.exports =
 
   base64Encode: (text) ->
     new Buffer(text).toString('base64')
-
-  base64Toggle: (text) ->
-    if isBase64Encoded(text)
-      new Buffer(text, 'base64').toString('utf8')
-    else
-      new Buffer(text).toString('base64')
 
 #################################################################
 # Helper functions
