@@ -4,18 +4,19 @@
 
 - Fork this repo.
 - Create a new branch and commit the changes.
-- Test manually and add specs.
-- Send Pull Request. Get a +1 from the core team.
+- Test manually and add specs. All new code requires tests to ensure against regressions
+- Send Pull Request. Filling out the PR template is required. Any pull request that does not include enough information to be reviewed in a timely manner may be closed at the maintainers' discretion.
+- Get a +1 from the core team.
 - Get your changes merged.
 
-## Dependencies
+## Build dependencies
 
 ```shell
 npm install # Node package manager install
 apm rebuild # Atom package manager rebuild
 ```
 
-## Release
+## Release new versions
 
 ```shell
 apm publish patch # or minor, mayor
