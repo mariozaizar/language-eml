@@ -1,29 +1,74 @@
-quotedPrintable = require('quoted-printable')
+{CompositeDisposable} = require 'atom'
+EMLView = require('./language-eml-view')
+
+url = require('url')
 utf8 = require('utf8')
+quotedPrintable = require('quoted-printable')
+
+AtomPanelView = null
 
 module.exports =
+  desactivate: ->
+    log "Deactivated"
+    @subscriptions.dispose()
+
   activate: ->
     atom.commands.add 'atom-workspace', 'language-eml:base64-toggle', => @convert @base64Toggle
     atom.commands.add 'atom-workspace', 'language-eml:base64-decode', => @convert @base64Decode
     atom.commands.add 'atom-workspace', 'language-eml:base64-encode', => @convert @base64Encode
+    log "Base64 activated"
 
     atom.commands.add 'atom-workspace', 'language-eml:quoted-printable-decode', => @convert @quotedPrintableDecode
     atom.commands.add 'atom-workspace', 'language-eml:quoted-printable-encode', => @convert @quotedPrintableEncode
+    log "Quoted Printable activated"
 
+    atom.workspace.addOpener(@emlOpener)
+    @subscriptions = new CompositeDisposable()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'language-eml:html-preview', => @openPane()
+    log "Preview HTML activated"
+
+  ###############################################################
+  emlOpener: (uri) ->
+    try
+      {protocol, pathName} = url.parse(uri)
+      if protocol != 'eml-preview:'
+        log "This can be used only for EML preview content!"
+        return
+
+      AtomPanelView = new EMLView(decodeURI(pathName))
+      return AtomPanelView
+
+    catch error
+      log "There was an error opening the email #{error}"
+      return
+
+  openPane: (currentEditor) ->
+    if editor = currentEditor || atom.workspace.getActiveTextEditor()
+      grammar = editor.getGrammar()
+      uri = 'eml-preview://file'
+      pane = atom.workspace.paneForURI(uri)
+
+      if grammar.scopeName != 'text.eml.basic'
+        log "This can be used only with EML files!"
+        return
+
+      pane.destroyItem(pane.itemForURI(uri)) if pane
+      atom.workspace.open(uri, { split: 'right', searchAllPanes: true }).then(() => AtomPanelView.render(editor))
+  ###############################################################
   convert: (converter) ->
     if editor = atom.workspace.getActiveTextEditor()
       selected_text = editor.getSelectedText()
 
       if selected_text.length == 0
-        log("No selected text, taking full editor line.")
+        log "No selected text, taking full editor line"
         editor.moveToFirstCharacterOfLine()
         editor.selectToEndOfLine()
         selected_text = editor.getSelectedText()
 
-      log("Selected text:\n#{selected_text}")
+      log "Selected text:\n#{selected_text}"
       new_text = converter(selected_text)
 
-      log("Finished.")
+      log "Finished"
       editor.insertText(new_text, {'select': true})
 
   quotedPrintableDecode: (text) ->
@@ -44,6 +89,7 @@ module.exports =
     else
       new Buffer(text).toString('base64')
 
+#################################################################
 # Helper functions
 
 isBase64Encoded = (text) ->
@@ -55,4 +101,4 @@ isBase64Encoded = (text) ->
 
 log = (message) ->
   if atom.inDevMode()
-    console.log("EML: #{message}")
+    console.log "EML: #{message}"
