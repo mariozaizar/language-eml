@@ -2,7 +2,7 @@
 {
   'scopeName': 'text.eml.basic'
   'name': 'Email (EML)'
-  'fileTypes': ['eml', 'email', 'mail', 'mime']
+  'fileTypes': ['eml', 'msg', 'mbx', 'mbox']
   'patterns': [
     # Email addresses
     {

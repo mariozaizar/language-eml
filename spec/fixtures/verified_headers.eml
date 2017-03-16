@@ -1,0 +1,225 @@
+Return-path:
+ <random-000001@amazonses.com>
+Received: from mr11p00im-smtpin006.me.com ([17.110.69.194])
+ by ms03531.mac.com (Oracle Communications Messaging Server 7.0.5.38.0 64bit
+ (built Aug  1 2016)) with ESMTP id <0OLS003VJZ9TRNB0@ms03531.mac.com> for
+ mariozaizar@example.com; Thu, 23 Feb 2017 01:10:42 +0000 (GMT)
+Original-recipient: rfc822;mariozaizar@example.com
+Received: from a8-30.smtp-out.amazonses.com
+ (a8-30.smtp-out.amazonses.com [54.240.8.30]) by mr11p00im-smtpin006.me.com
+ (Oracle Communications Messaging Server 7.0.5.38.0 64bit (built Feb 26 2016))
+ with ESMTPS id <0OLS004XLZ9QYS80@mr11p00im-smtpin006.me.com> for
+ mariozaizar@example.com (ORCPT mariozaizar@example.com); Thu,
+ 23 Feb 2017 01:10:41 +0000 (GMT)
+Authentication-results: mr21p00im-spfmilter007.me.com; spf=pass
+ (mr21p00im-spfmilter007.me.com: domain of
+ random-000001@amazonses.com
+ designates 54.240.8.30 as permitted sender)
+ smtp.mailfrom=random-000001@amazonses.com;
+Received-SPF: pass (mr21p00im-spfmilter007.me.com: domain of
+ random-000001@amazonses.com
+ designates 54.240.8.30 as permitted sender)
+ receiver=mr21p00im-spfmilter007.me.com; client-ip=54.240.8.30;
+ helo=a8-30.smtp-out.amazonses.com;
+ envelope-from=random-000001@amazonses.com;
+Authentication-results: mr21p00im-dkimmilter001.me.com;	dkim=pass (1024-bit
+ key) header.d=amazonses.com header.i=@amazonses.com header.b=Agrk/1s3;
+	dkim-adsp=pass
+Authentication-results: mr21p00im-dkimmilter001.me.com;	dkim=pass (1024-bit
+ key) header.d=airmailapp.com header.i=@airmailapp.com header.b=ZTZbqgvH;
+	dkim-adsp=pass
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=mncu4fjbxjidkp53plah3dwtcj2ev4gd; d=airmailapp.com; t=1487812238;
+	h=Date:To:From:Reply-to:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type;
+	bh=nEEa4zsqHW0g4qa0SJ5O1iJ3qrjgqRYfE5oS3YPS7RM=;
+	b=ZTZbqgvHF0n1utkLrsUZRKJ9q8D8/8UgZPP4EcU4l22FJWR3YXOC0Jg4ASkkxQ9F
+	FwYA61qw50lvV+mZQI791Ye5VmT1FWW+4PtvwN87IVSW6s6ijL4YZjrMa1JlWmXfAqz
+	UStXY04vbFLXBafnjmwE2WEatoh9Wwzr9yECMhl8=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1487812238;
+	h=Date:To:From:Reply-to:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Feedback-ID;
+	bh=nEEa4zsqHW0g4qa0SJ5O1iJ3qrjgqRYfE5oS3YPS7RM=;
+	b=Agrk/1s3OljE+5LNHI6mjyhuDKhVUvymfkmgoR94zPEL4Sfrj3Aknl16u0YGYiTh
+	fKkkuA/+UhSBtv5fEmXKpuqXw+6sxpHRSfe53nDNYUF1LLJm758myDLCRoI5CcUZnBL
+	Ny1u1x7pZdVLyZqjaHxJd6Tl4SM17aW+lmObaWgI=
+Date: Thu, 23 Feb 2017 01:10:38 +0000
+To: mariozaizar@example.com
+From: Airmail <help@airmailapp.com>
+Reply-to: Airmail <help@airmailapp.com>
+Subject: Airmail 1.5 for iOS
+Message-id:
+ <random-000001@email.amazonses.com>
+X-Priority: 3
+X-Mailer: Sendy (https://sendy.co)
+List-Unsubscribe:
+ <https://news.bloopsoftware.com/unsubscribe/crGP0hIdcbs1pU8sJ8PK9ORD76QNnNivdY8ZMYHrRD8/NAXTbTCLEdCFg72RfyY7lQ/5HwZkVo3VTJnPKtuSph1Hw>
+MIME-version: 1.0
+Content-type: multipart/alternative;
+ boundary=b1_98090b73267db344f1cc9f47723f02c8
+Feedback-ID: 1.us-east-1.pIGbSFLnONIqaFqMLR4KqO/urC8fApqQrtK25bfqZKM=:AmazonSES
+x-icloud-spam-score: 33113311
+ f=airmailapp.com;e=amazonses.com;is=yes;ir=no;spf=pass;dkim=pass;dmarc=absent/(noPolicy);gdwl=absent;pps=ham;clxs=ham;clxw=neutral;pwl=absent
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=141 suspectscore=4 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=100 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1701120000 definitions=main-1702230008
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,,
+ definitions=2017-02-22_18:,, signatures=0
+X-CLX-Spam: false
+X-CLX-UnSpecialScore: None
+X-CLX-Score: 141
+X-CLX-UShades: None
+X-CLX-Shades: None
+X-MANTSH: 1TEIXR1gbG1oaGkNHB0tNT0ReQ0QZGxsYEQpMQxcbHQQbGxsEGx0ZBBkYEBseGh8
+ aEQpMWRcbHhsRCllNF2RFRE8RCllJFxpxGhAadwYbGBtxGRIcEBgZdwYYGgYaEQpZXhdra3kRC
+ kNOF08eTEMfcExhGEZkbmROZV4fQwVCWB57Y0Ndc3BOWRofEQpYXBcZBBoEGRsHTRIdGBIZHRk
+ FGx0EGxsbBBsfHwQYHhoQGx4aHxoRCl5ZF3oeE1lZEQpNXBcZGRsRCkxaF2lrbU1BXREKTEYXb
+ 2tra2trEQpDWhcfHgQYHhoEEgQZGhEKQl4XGxEKQkYXaWUBZkFdTG9aeWcRCkJHF2NlQUt7QE5
+ ca2ltEQpCXBcbEQpeThcbEQpCSxdoQmh5eF1zGn8dZxEKQkUXZRJfbRkFWlxmSUsRCkJOF2hCa
+ Hl4XXMafx1nEQpCTBdsb2NEU00STkFgSxEKQmwXblhlHUMfSWRIa0gRCkJAF2JTEkkeYUFabnJ
+ sEQpCWBduaGUBBW9+eF1zYxEKcGgXbUVcQ29HZgVrAUAQGRoRCnBoF2tQRgVFZVhPSVp8EB4SE
+ QpwaBdvHmhGclB5Z3sfARAZGhEKcGgXYH1+HhtpHlBhWUYQGRoRCnBoF2hwfxNJXnthT1xeEB4
+ SEQpwfxdrWXN/HRxDZh9bThAeEhEKcF8XaRwfeV9GT0ltRG0QGhEKcH0XaG9zQ1hsBWZwYWAQG
+ hEKcH8XZUhgR1l+WG9aQ2UQHAQSEQpwXxdlZxNOQ19OeBwfZxAeEhEKcH0XbF8ZQ0hkR0FaYn4
+ QHhIRCnBfF2tLfUxrRGl7G1tNEBoRCnB9F20fY1JcX05OaGIfEBoRCnBfF29aYltQS3BGUENLE
+ BoRCnB9F21heEVpf31wfEQdEBoRCnBsF24SS2QcQ2JQU29CEB4SEQptfhcaEQpYTRdLEQ==
+X-SES-Outgoing: 2017.02.23-54.240.8.30
+
+--b1_98090b73267db344f1cc9f47723f02c8
+Content-Type: text/plain; charset = "UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Airmail 1.5 with iOS with Custom Actions.
+
+- Workflow Integration, Advanced integration
+- Open URL Action, Interact with API and other Apps
+- Bear Integration, Apple App of the year
+- Canned Response, Build your own quick replies
+- Much More...
+
+
+
+--b1_98090b73267db344f1cc9f47723f02c8
+Content-Type: text/html; charset = "UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+	<title>Airmail 1.5 for iOS</title>
+	<style type="text/css">* {
+				border-line:1.px
+			}
+			.title {
+			font-family:-apple-system, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			    font-size: 116%; padding:0px; margin:0px; font-weight: normal;
+			color:black;
+			}
+
+			.sub {
+			font-family:-apple-system, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color:gray;
+			    font-size: 95%;
+				line-height: 150%;
+				padding:0px; margin:0px;
+				margin-bottom:20px
+			}
+			.disc {
+			font-family:-apple-system, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color:gray;
+			    font-size: 75%;
+				line-height: 150%;
+				padding:0px; margin:0px;
+				margin-bottom:10px
+			}
+			.subreit {
+				font-family:-apple-system, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color:gray;
+				font-size: 95%;
+				line-height: 150%;
+				padding:0px; margin:0px;
+				margin-bottom:0px
+			}
+			.small {
+				font-family:-apple-system, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color:gray;
+				font-size: 65%;
+				line-height: 150%;
+			}
+
+			#inner {
+				width: 50%;
+				margin: 0 auto;
+			}
+			.centered { text-align: center; }
+			.centered-table {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.unsubscribe {
+				text-decoration:none;
+				font-family:-apple-system, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color:#000;
+				font-size: 95%;
+				line-height: 150%;
+				padding:0px; margin:0px;
+				margin-bottom:10px
+			}
+			h6 {
+				font-size: 50x;
+				font-family:-apple-system-body, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+	</style>
+</head>
+<body>
+<div>
+<div class="centered"><a href="https://news.bloopsoftware.com/l/EjzmHgxNxVN547bB1sqIXg/GSPE892Qzk763LbxdZWDExTF3Q/5HwZkVo3VTJnPKtuSph1Hw"><img alt="Airmail 1.5 for iOS" src="http://bloop.s3.amazonaws.com/images/1.3/airmail1.5.jpg" width="600" /> </a></div>
+
+<div class="inner">
+<table border="0" class="centered-table">
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="0px">&nbsp;</td>
+			<td width="400px">
+			<h4 class="title">Workflow Integration</h4>
+
+			<p class="sub">Advanced integration</p>
+
+			<h4 class="title">Open URL Action</h4>
+
+			<p class="sub">Interact with API and other Apps</p>
+
+			<h4 class="title">Bear Integration</h4>
+
+			<p class="sub">Apple App of the year</p>
+
+			<h4 class="title">Canned Response</h4>
+
+			<p class="sub">Build your own quick replies</p>
+
+			<h4 class="title">Much More...</h4>
+
+			<p><a href="https://news.bloopsoftware.com/unsubscribe/crGP0hIdcbs1pU8sJ8PK9ORD76QNnNivdY8ZMYHrRD8/NAXTbTCLEdCFg72RfyY7lQ/5HwZkVo3VTJnPKtuSph1Hw"  class="unsubscribe">Unsubscribe</a></p>
+
+			<p class="disc">Copyright &copy; 2016 Bloop. All rights reserved.</p>
+
+			<p class="disc">You are receiving this email because you or someone used this email address to subscribe to this email to the Airmail newsletter.</p>
+
+			<p class="disc">Our mailing address is:<br />
+			Bloop. SRL - Piazza Indipendenza 2 Siena Italy, 53100</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
+<img src="https://news.bloopsoftware.com/t/5HwZkVo3VTJnPKtuSph1Hw/EjzmHgxNxVN547bB1sqIXg" alt="" style="width:1px;height:1px;"/>
+
+
+
+--b1_98090b73267db344f1cc9f47723f02c8--
