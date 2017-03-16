@@ -4,10 +4,12 @@
   },
   "main": "./lib/language-eml",
   "dependencies": {
+    "atom-space-pen-views": "^2.0.5",
     "quoted-printable": "^1.0.1"
   },
   "description": "Email (EML) package for Atom",
   "devDependencies": {
+    "atom-space-pen-views": "^2.0.5",
     "quoted-printable": "^1.0.1"
   },
   "engines": {
@@ -16,16 +18,18 @@
   },
   "homepage": "https://github.com/mariozaizar/language-eml",
   "keywords": [
+    "email",
+    "e-mail",
+    "mail",
     "eml",
     "emlx",
     "msg",
     "mbx",
-    "email",
-    "mail",
     "mime",
-    "e-mail"
+    "message/rfc822"
   ],
-  "license": "LICENSE.md",
+  "license": "MIT",
+  "licenseFilename": "LICENSE.md",
   "name": "language-eml",
   "optionalDependencies": {},
   "readmeFilename": "README.md",
