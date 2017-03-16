@@ -8,6 +8,8 @@
 
 Adds syntax highlighting, snippets, shortcuts, and commands to Email files in Atom.
 
+![screen shot 2017-03-15 at 4 04 39 pm](https://cloud.githubusercontent.com/assets/164819/23974678/b8134482-0999-11e7-8af7-a10b1cbd7711.png)
+
 ## Features
 
 * Grammar:
@@ -24,6 +26,8 @@ Adds syntax highlighting, snippets, shortcuts, and commands to Email files in At
 
 ## Install
 
+> :mouse: https://atom.io/packages/language-eml
+
 Preferences → Install → Search `language-eml` package
 
 ![eml install](https://cloud.githubusercontent.com/assets/164819/23042201/988b15f2-f44c-11e6-833a-99e6503718b9.gif)
@@ -33,6 +37,8 @@ Preferences → Install → Search `language-eml` package
 ## Development
 
 Contributions are greatly appreciated. Please follow our [Contributing Guide](CONTRIBUTING.md).
+
+> :mouse: https://github.com/mariozaizar/language-eml/
 
 ## References
 
@@ -60,9 +66,9 @@ Tools:
 - Email Header Analyzer: https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx
 - MIME checker: http://mime.ritey.com/
 
-## Example
+## Email example
 
-*Example of EML file*
+*basic.eml*
 ```eml
 Message-ID: <CO1PR02MB254D56B6A11BA5FA73E2476BFDD0@CO1PR02MB254.namprd02.prod.example.com>
 From: Mario Zaizar <mariozaizar@example.com>
@@ -87,11 +93,11 @@ Ym9keSBvZiB0aGUgbWVzc2FnZS48L3A+CiAgPC9ib2R5Pgo8L2h0bWw+Cg==
 
 ## Screenshots
 
+*[Preview email](#eml-preview)*
+![eml preview](https://cloud.githubusercontent.com/assets/164819/23978557/e6e62618-09b1-11e7-97be-7da1b902b38a.gif)
+
 *[Syntax highlighting](#eml-grammar)*
 ![eml grammar](https://cloud.githubusercontent.com/assets/164819/23042206/9e354360-f44c-11e6-92d4-5ea9e90e2af6.gif)
-
-*[Preview email](#eml-preview)*
-![eml preview]()
 
 *[Plain-Text email template](eml-snippets-basic)*
 ![eml snippets basic](https://cloud.githubusercontent.com/assets/164819/23042214/a409a538-f44c-11e6-8182-7c11a0466a78.gif)
