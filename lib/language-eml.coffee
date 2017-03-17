@@ -73,7 +73,9 @@ module.exports =
       editor.insertText(new_text, {'select': true})
 
   quotedPrintableDecode: (text) ->
-    utf8.decode(quotedPrintable.decode(text))
+    text = quotedPrintable.decode(text)
+    text = utf8.decode(text)
+    text
 
   quotedPrintableEncode: (text) ->
     quotedPrintable.encode(utf8.encode(text))
@@ -95,5 +97,5 @@ isBase64Encoded = (text) ->
     false
 
 log = (message) ->
-  if atom.inDevMode()
+  if atom.inDevMode() || true
     console.log "EML: #{message}"
