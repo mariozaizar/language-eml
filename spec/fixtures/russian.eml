@@ -1,0 +1,93 @@
+Delivered-To: mariozaizar@example.com
+Envelope-From: andy@example.com
+From: <andy@example.com>
+Return-Path: <andy@example.com>
+Subject: =?windows-1251?B?yMHP?=
+Thread-Index: AdGVce46h1MP1kxXSUCvoTW6JHOqgA==
+Thread-Topic: =?windows-1251?B?yMHP?=
+To: <mariozaizar@example.com>
+x-ms-exchange-transport-fromentityheader: Hosted
+Accept-Language: en-US
+Content-Language: ru-RU
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+X-Original-To: mariozaizar@example.com
+x-originating-ip: [1.2.3.4]
+Content-Type: multipart/alternative;
+	boundary="_000_991b4223462f43de8d26145fa3f82b25mclust2depolocal_"
+MIME-Version: 1.0
+
+--_000_991b4223462f43de8d26145fa3f82b25mclust2depolocal_
+Content-Type: text/plain; charset="windows-1251"
+Content-Transfer-Encoding: quoted-printable
+
+=CA=EE=EB=EB=E5=E3=E8, =EF=F0=E8=E2=E5=F2!
+=CF=F0=EE=F8=F3 =EE=E1=EE=F0=F3=E4=EE=E2=E0=F2=FC =EC=EE=E5 =F0=E0=E1=EE=F7=
+=E5=E5 =EC=E5=F1=F2=EE =C8=C1=CF.
+=D1=EF=E0=F1=E8=E1=EE.
+
+--_000_991b4223462f43de8d26145fa3f82b25mclust2depolocal_
+Content-Type: text/html; charset="windows-1251"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+251">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"RU" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">=CA=EE=EB=EB=E5=E3=E8, =EF=F0=E8=E2=E5=F2!<o:p></o:p=
+></p>
+<p class=3D"MsoNormal">=CF=F0=EE=F8=F3 =EE=E1=EE=F0=F3=E4=EE=E2=E0=F2=FC =
+=EC=EE=E5 =F0=E0=E1=EE=F7=E5=E5 =EC=E5=F1=F2=EE =C8=C1=CF.<o:p></o:p></p>
+<p class=3D"MsoNormal">=D1=EF=E0=F1=E8=E1=EE.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_991b4223462f43de8d26145fa3f82b25mclust2depolocal_--

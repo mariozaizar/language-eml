@@ -2,7 +2,7 @@
 {
   'scopeName': 'text.eml.basic'
   'name': 'Email (EML)'
-  'fileTypes': ['eml', 'email', 'mail', 'mime']
+  'fileTypes': ['eml', 'msg', 'mbx', 'mbox']
   'patterns': [
     # Email addresses
     {
@@ -66,12 +66,21 @@
       'name': 'variable.eml'
     },
     {
+      'match': 'boundary=.*',
+      'name': 'keyword.control.eml'
+    },
+    {
       'match': '^--(?!>).*',
       'name': 'keyword.control.eml'
     },
 
+    # UUID
+    {
+      'match': "(?x)([0-9a-fA-F]{32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})",
+      'name': 'constant.other.eml'
+    },
+
     # Content-Transfer-Encoding: base64
-    # TODO: try with /^[A-Za-z0-9+/=]+$/
     {
       'match': '^(?:[A-Za-z0-9+/]{4})+(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$',
       'name': 'text.eml.encoded'
@@ -94,16 +103,11 @@
       'match': "(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)",
       'name': 'variable.other.eml'
     },
+
     # IPv6
     {
       'match': "(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))",
       'name': 'variable.other.eml'
-    },
-
-    # UUID
-    {
-      'match': "([0-9a-fA-F]{32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})",
-      'name': 'constant.other.eml'
     }
   ]
 }

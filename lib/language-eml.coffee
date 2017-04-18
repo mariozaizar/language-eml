@@ -15,17 +15,34 @@ module.exports =
     @subscriptions.dispose()
 
   activate: ->
-    atom.commands.add 'atom-workspace', 'language-eml:base64-decode', => @convert @base64Decode
-    atom.commands.add 'atom-workspace', 'language-eml:base64-encode', => @convert @base64Encode
-    log "Base64 activated"
+    atom.commands.add 'atom-workspace',
+      'language-eml:base64-decode': =>
+        @convert @base64Decode
 
-    atom.commands.add 'atom-workspace', 'language-eml:quoted-printable-decode', => @convert @quotedPrintableDecode
-    atom.commands.add 'atom-workspace', 'language-eml:quoted-printable-encode', => @convert @quotedPrintableEncode
-    log "Quoted Printable activated"
+      'language-eml:base64-encode': =>
+        @convert @base64Encode
+
+      'language-eml:quoted-printable-decode': =>
+        @convert @quotedPrintableDecode
+
+      'language-eml:quoted-printable-encode': =>
+        @convert @quotedPrintableEncode
+
+      # WIP
+      # 'language-eml:saveAsHtml': =>
+      #   @saveAsHtml()
+      #
+      # 'language-eml:copyAsHtml': =>
+      #   @copyAsHtml()
+
+    log "Commands activated"
 
     atom.workspace.addOpener(@emlOpener)
     @subscriptions = new CompositeDisposable()
-    @subscriptions.add atom.commands.add 'atom-workspace', 'language-eml:email-preview', => @openPane()
+    @subscriptions.add atom.commands.add 'atom-workspace',
+      'language-eml:email-preview': =>
+        @openPane()
+
     log "Email Preview activated"
 
   ###############################################################
@@ -33,14 +50,14 @@ module.exports =
     try
       {protocol, pathName} = url.parse(uri)
       if protocol != 'eml-preview:'
-        log "This can be used only for EML preview content!"
+        log 'This can be used only for EML preview content!'
         return
 
       AtomPanelView = new EMLView(decodeURI(pathName))
       return AtomPanelView
 
     catch error
-      log "There was an error opening the email #{error}"
+      atom.notifications.addWarning error.reason
       return
 
   openPane: (currentEditor) ->
@@ -50,11 +67,23 @@ module.exports =
       pane = atom.workspace.paneForURI(uri)
 
       if grammar.scopeName != 'text.eml.basic'
-        log "This can be used only with EML files!"
+        log 'This can be used only with EML files!'
         return
 
       pane.destroyItem(pane.itemForURI(uri)) if pane
       atom.workspace.open(uri, { split: 'right', searchAllPanes: true }).then(() => AtomPanelView.render(editor))
+
+  # WIP
+  # copyAsHtml: () ->
+  #   uri = 'eml-preview://file'
+  #   if pane = atom.workspace.paneForURI(uri)
+  #     atom.clipboard.write(pane.getText())
+  #
+  # saveAsHtml: () ->
+  #   uri = 'eml-preview://file'
+  #   if pane = atom.workspace.paneForURI(uri)
+  #     pane.saveAs()
+
   ###############################################################
   convert: (converter) ->
     if editor = atom.workspace.getActiveTextEditor()
@@ -73,7 +102,9 @@ module.exports =
       editor.insertText(new_text, {'select': true})
 
   quotedPrintableDecode: (text) ->
-    utf8.decode(quotedPrintable.decode(text))
+    text = quotedPrintable.decode(text)
+    text = utf8.decode(text)
+    text
 
   quotedPrintableEncode: (text) ->
     quotedPrintable.encode(utf8.encode(text))
@@ -95,5 +126,5 @@ isBase64Encoded = (text) ->
     false
 
 log = (message) ->
-  if atom.inDevMode()
+  if atom.inDevMode() || true
     console.log "EML: #{message}"

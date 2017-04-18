@@ -1,0 +1,230 @@
+Delivered-To: mariozaizar@example.com
+Received: by 10.176.85.94 with SMTP id u30csp1521806uaa;
+        Mon, 20 Mar 2017 15:36:51 -0700 (PDT)
+X-Received: by 10.31.61.194 with SMTP id k185mr11265961vka.141.1490049411158;
+        Mon, 20 Mar 2017 15:36:51 -0700 (PDT)
+Return-Path: <>
+Received: from mail-ua0-x245.google.com (mail-ua0-x245.google.com. [2607:f8b0:400c:c08::245])
+        by mx.google.com with ESMTPS id y15si6196293uay.51.2017.03.20.15.36.51
+        for <mariozaizar@example.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Mar 2017 15:36:51 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of postmaster@mail-ua0-x245.google.com designates 2607:f8b0:400c:c08::245 as permitted sender) client-ip=2607:f8b0:400c:c08::245;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@googlemail.com;
+       spf=pass (google.com: best guess record for domain of postmaster@mail-ua0-x245.google.com designates 2607:f8b0:400c:c08::245 as permitted sender) smtp.helo=mail-ua0-x245.google.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+Received: by mail-ua0-x245.google.com with SMTP id 62so39403699uas.1
+        for <mariozaizar@example.com>; Mon, 20 Mar 2017 15:36:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=20161025;
+        h=from:to:auto-submitted:subject:references:in-reply-to:message-id
+         :date;
+        bh=mw9KJSpgYIv6sHUHRWyaGL8lAMGTaM1mnI5URNga5DA=;
+        b=pPEU/kcvLVHWzGLzEprjxDSIgy5/lPbx4Lud3+1tjomt8cTHVeTBQT/BfAYjU3c84b
+         AILALR09lOBn0rkowSjTU2Qr/5DiHpwI1aiV5pv0XxaihHzIdPSH5SaaVk4ZzEYCGD3p
+         5Y5YhCXcmP9cZs2EB/K4oD4c9KgDZ0xsHAgagXWG4Npjt2otqe/TEUKnuz0RHDie+u/v
+         4OXFugqm5bWUmeMl/wltgAy6FooKpxFoAesAzZQ0vtg9hzJyzYcpmNpxpEI1gnJpB3Oz
+         /GmTZ58JQnIGUVxLqrAaP9VK6IJeWRVu1JynYRYJYOvhVn8PmyoGAZGwV4LhMzQdAlwd
+         WBHw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:to:auto-submitted:subject:references
+         :in-reply-to:message-id:date;
+        bh=mw9KJSpgYIv6sHUHRWyaGL8lAMGTaM1mnI5URNga5DA=;
+        b=Rv09Ous625/n74Ok2tEgPF53EJTHW4wkYkr7WXUq8G7w2Iw32gWV3BtCf4ZK3KHIMj
+         cRJJtkv5PJ7jbKYcSC0OkJ+pp30xxFHuBxUHl9nY0Sn+19tBdaQ2R5Xojbn9Avk0Rk+h
+         L+9UyDvntlfcgF0VuTjidvOSuCWVvjDOA8Nn4DNZcu+HZKr7gh/WA/2zf4spqXUo5Tts
+         mbwRVIax7ucX967qB7HdXcuxkdmguFqiGcoEc7rswwE6twC82+K/bBm2fStl5P/UAsT4
+         LK7pfwzfQ7CbUA1oJjs2YDgamIO48VOvxhefwW7ooGWAud3b2v/Eu4ofdMZi5uH/VUPu
+         UPdw==
+X-Gm-Message-State: AFeK/H2qcbwVQRDEhLKQItvY6e4FRsVxCEGWXKY5ULf0mqHbV99+yfia07ooTtm1U+1o1IWryKCZZSYCyiOaCTaCNrSpQTK/EVV5Hfk=
+X-Received: by 10.31.230.198 with SMTP id d189mr13486148vkh.138.1490049411089;
+        Mon, 20 Mar 2017 15:36:51 -0700 (PDT)
+Content-Type: multipart/report; boundary=94eb2c092b64d876f9054b31296e; report-type=delivery-status
+Return-Path: <>
+Received: by 10.31.230.198 with SMTP id d189mr14750509vkh.138; Mon, 20 Mar
+ 2017 15:36:51 -0700 (PDT)
+From: Mail Delivery Subsystem <mailer-daemon@googlemail.com>
+To: mariozaizar@example.com
+Auto-Submitted: auto-replied
+Subject: Delivery Status Notification (Failure)
+References: <CACGNpndTPhN+yA7=H2QjN2EDWM1xvR3cq9BducOxY+1afje2nA@mail.example.com>
+In-Reply-To: <CACGNpndTPhN+yA7=H2QjN2EDWM1xvR3cq9BducOxY+1afje2nA@mail.example.com>
+Message-ID: <58d05983.c6e61f0a.4d024.7315.GMRIR@mx.google.com>
+Date: Mon, 20 Mar 2017 15:36:51 -0700 (PDT)
+
+--94eb2c092b64d876f9054b31296e
+Content-Type: multipart/related; boundary=94eb2c092b64d880b3054b31296f
+
+--94eb2c092b64d880b3054b31296f
+Content-Type: multipart/alternative; boundary=94eb2c092b64d880c0054b312970
+
+--94eb2c092b64d880c0054b312970
+Content-Type: text/plain; charset=UTF-8
+
+
+** Address not found **
+
+Your message wasn't delivered to hagfdsghkasfgdkasudfgahscvakshgdfasghkdfcvgcgscdgcvg@example.com because the address couldn't be found. Check for typos or unnecessary spaces and try again.
+
+Learn more here: https://support.google.com/mail/?p=NoSuchUser
+
+The response from the remote server was:
+550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/?p=NoSuchUser t30si2927556uat.28 - gsmtp
+
+--94eb2c092b64d880c0054b312970
+Content-Type: text/html; charset=UTF-8
+
+
+<html>
+<head>
+<style>
+* {
+font-family:Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" class="email-wrapper" style="padding-top:32px;background-color:#ffffff;"><tbody>
+<tr><td>
+<table cellpadding=0 cellspacing=0><tbody>
+<tr><td style="max-width:560px;padding:24px 24px 32px;background-color:#fafafa;border:1px solid #e0e0e0;border-radius:2px">
+<img style="padding:0 24px 16px 0;float:left" width=72 height=72 alt="Error Icon" src="cid:icon.png">
+<table style="min-width:272px;padding-top:8px"><tbody>
+<tr><td><h2 style="font-size:20px;color:#212121;font-weight:bold;margin:0">
+Address not found
+</h2></td></tr>
+<tr><td style="padding-top:20px;color:#757575;font-size:16px;font-weight:normal;text-align:left">
+Your message wasn't delivered to <a style='color:#212121;text-decoration:none'><b>hagfdsghkasfgdkasudfgahscvakshgdfasghkdfcvgcgscdgcvg@example.com</b></a> because the address couldn't be found. Check for typos or unnecessary spaces and try again.
+</td></tr>
+<tr><td style="padding-top:24px;color:#4285F4;font-size:14px;font-weight:bold;text-align:left">
+<a style="text-decoration:none" href="https://support.google.com/mail/?p=NoSuchUser">LEARN MORE</a>
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr>
+<tr style="border:none;background-color:#fff;font-size:12.8px;width:90%">
+<td align="left" style="padding:48px 10px">
+The response from the remote server was:<br/>
+<p style="font-family:monospace">
+550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient&#39;s email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/?p=NoSuchUser t30si2927556uat.28 - gsmtp
+</p>
+</td>
+</tr>
+</tbody></table>
+</body>
+</html>
+
+--94eb2c092b64d880c0054b312970--
+--94eb2c092b64d880b3054b31296f
+Content-Type: image/png; name="icon.png"
+Content-Disposition: attachment; filename="icon.png"
+Content-Transfer-Encoding: base64
+Content-ID: <icon.png>
+
+iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAYAAADnRuK4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABTdJREFUeNrsnD9sFEcUh5+PRMqZ
+yA0SPhAUQAQFUkyTgiBASARo6QApqVIkfdxGFJFSgGhJAUIiBaQB0ZIOKVCkwUgURjIg2fxL4kS+
+YDvkbC/388bi8N16Z4/d7J/5PsniuD3fyePP772ZeTsDQRAYQL/UGAJAIEAgQCBAIAAEAgQCBAIE
+AkAgyJT3Mv+Eq7vYK8mTE+MDRCAghQECAeRQA5V2ZOpmg5vDx3NPzRbmGRMEcmTrEbNNB8zWfRD+
+f/Efs2e3zCZvMjaksBg27TfbcuSNPEKP9ZyuAQKtHX2O9ncNgWC57umMPKvRNb0GEKgnLoUyxTQC
+rcns0/6uIRAs8/hGf9cQCJZpTpjdO2f25/03z+mxntM1eLtsZAgiUtX4JcaBCAQIBAgECARQ8CJa
+G5jab4J4pm4WZmO3OALVh802fIwcLkyPkcKAGggAgQCBAIEAgQCBABAIEAjKA/1AnahhbO5FdOOY
+VsrrDbPBYcYKgf5D2wLaV3p+22xh1u17tO3S+DTcvxvagUDeivPgx/a/95J/73w7Sj26Hn4pKo2M
+ehuV/KyBJM6d0f7k6RKx/R63vvL2tmf/ItDdM2ZTP6f7nkp9Y2fDx1v9akmpIU+KSCLVUghUQfSL
+zVKeTklbLxGoctw/nzC5rw8L5KRNbkpnKq6pgSqEClzNnFzY+XnYWrt6VpVk1vbwWvg+RKCKMOUw
+Q1LEOXA+/MX3mpJvGDHb265xtnzmFoUK1HaKQGlMtePYM+q2KKjXuaS1NJYIEKgI8jhEgqHt4cqy
+Ky53j3hyHz2bqSLp2o2LbJ7MxKovkGqXteoWpaOk96O9/yF/dF7NwlS36AuIQIBA5celQK4PIxBE
+4LLzrtoLgaALdSy6CJRkWQCBPGLsTHznomZ9nszUECgJ2ml3WWHe+QVFNPSQx6UdZNtxr9pbEShN
+eTTz8mQXHoHSlke7+Z+c9m6VGoHSkEfs/trLW3wQKApN1V3lGfnGu2Z6BFoLtYCs3GWBPAiUCLVh
+/HoaeRCoT9R873KLM/IgUBfapnCpe5AHgXry4pf412ihEHkQqCdxd5VqrcezhUIESsJMTJ+Pdthp
+Z0WgyNlXXPHc2Mc4IVAELl2Gnh8mhUDvCkfbIVAkcbf/aOoO3fMKhqAD3frTa4quwpn0hUDOkQhI
+YYBAgECAQAAU0QlYObl+5Ug8NcprZkZxjUCxRPVA6zmtEXHCBykskrhjgHXN09PoEcgFl4M4H11j
+nBAoApcj6ZoPGScEAgTKApcDoTw5sgWB+sGlz1n90IBAPdE6j1o21PfcC11jLagL1oFWRyGlKU3p
+OxcSJQ7NZAjkhHp/uG2HFAYIBAgECASAQIBAgECAQAAIBOkxEARBtp9wdVfAMOfIifEBIhCQwgCB
+ABAI0oV2jhxZ+nfBatuPZfgBCy0Eqqo8c01b+uu51XZvzOgDWoHNTGR+pCwpLEd5svuAZXlO2uEr
+PyEQ8hRWHgRCHmqg0sjTnLalv6crJQ8C/U8stqNO0I4+VZOHFIY8COS1PGL2ybd5yUMKK7s8zYmL
+dujyd3n+nESgcsvzZd4/KwIhDwIhT35QA6UyE1qyxZnfvJMHgdKS549JC1qvvJOHFIY8CFR5eV5O
+XimqPAhUdHnmfx+zgxdOFXkoqIGKKs/cswnb/8Oeog8HEai48nxUhiFBIORBIOShBioskkbySCLk
+IQIhDwIhj28p7FApR6b1qlEbHGpkO/rr6215vi/zH1r2x7tApSGFAQIBAgECAQIBIBAgECAQIBBA
+LK8FGADCTxYrr+EVJgAAAABJRU5ErkJggg==
+--94eb2c092b64d880b3054b31296f--
+--94eb2c092b64d876f9054b31296e
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; googlemail.com
+Arrival-Date: Mon, 20 Mar 2017 15:36:50 -0700 (PDT)
+X-Original-Message-ID: <CACGNpndTPhN+yA7=H2QjN2EDWM1xvR3cq9BducOxY+1afje2nA@mail.example.com>
+
+Final-Recipient: rfc822; hagfdsghkasfgdkasudfgahscvakshgdfasghkdfcvgcgscdgcvg@example.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com. (2607:f8b0:400c:c0c::1b, the
+ server for the domain example.com.)
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. Learn more at
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser t30si2927556uat.28 - gsmtp
+Last-Attempt-Date: Mon, 20 Mar 2017 15:36:51 -0700 (PDT)
+
+--94eb2c092b64d876f9054b31296e
+Content-Type: message/rfc822
+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=example.com; s=20161025;
+        h=from:mime-version:date:message-id:subject:to;
+        bh=jDBBFBG7Z84zG1JHIQ1sRd2aJRgSJVzsl/pLf240WiU=;
+        b=Xazz0Nqfz4f8a+LUkn7cmzG2c4/lGIDQzcunX6Mp2HMPid2wbOYEzeAt8LSQ0AU2d1
+         6G9kYGaCOAn+W1hz+BCijH1L0QPcXWsNGHiUkRbFmMRrphcfzUkO5c+KRk2/GU+kZwqE
+         27YNSsAtGZ5pRWXG2ZcnLaZ7aRiCGXtjarNrJbcK1Fx0pjJdErIMf+BI27bpCXcDKhd3
+         Q+jDHqEFmxFNNVb18vqqjsFBmfskMmpweFFiPdgoH/VX3FNpnBp2TjUtm6CBBx9Td4Qc
+         boQ4CUtt7jYzdEGd8FVs26qzUzaBXppDV/UOg5Ah6hPVh8CUZsxtQ+t1JF/LYAuTXTzV
+         Ax2A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:mime-version:date:message-id:subject:to;
+        bh=jDBBFBG7Z84zG1JHIQ1sRd2aJRgSJVzsl/pLf240WiU=;
+        b=Tvf98mmOUzHi/33JlRpHPQtUrErQ55UF/O/MxvJiAnVVm+6FYFHIYmNehCAKtgZGVJ
+         +5N4P3vj+IC/YJzWlcLYysp25kyrgl8tPQvCMssahdRgQYoyPibPnPrkhf96nviiOW5Q
+         EAXNtm1zOw4ZKR4nkFYx0Lsv+RdLrq166//tIvi8R0tH8prveeWDR46wmLYxs8Z7HRaB
+         TNFjzLIsJrodcEp64vw9FGDgQi2iIFPC5KIygW9Df7jRdGCoDxHSXdJ4zb6Pq/NsuZoB
+         dUnNsexYvyjYvNDKqE9eKMMn5MHCDneJFPImOTDadjS9SURa9A0w8nzPalWheDL2fHtG
+         JkwQ==
+X-Gm-Message-State: AFeK/H30YPAQMUxc9l6+/woRjVjq1QOlDQPms1Z+nV+iXM0eUn1ihc54nLpDVPflXGAvvA/OiCz/NBDucNNuRA==
+X-Received: by 10.31.230.198 with SMTP id d189mr13486132vkh.138.1490049410715;
+ Mon, 20 Mar 2017 15:36:50 -0700 (PDT)
+Received: from 1058052472880 named unknown by gmailapi.google.com with
+ HTTPREST; Mon, 20 Mar 2017 18:36:50 -0400
+From: Mario Zaizar <mariozaizar@example.com>
+X-Mailer: Airmail (419)
+MIME-Version: 1.0
+Date: Mon, 20 Mar 2017 18:36:50 -0400
+Message-ID: <CACGNpndTPhN+yA7=H2QjN2EDWM1xvR3cq9BducOxY+1afje2nA@mail.example.com>
+Subject: Original email sent to a bounce address
+To: hagfdsghkasfgdkasudfgahscvakshgdfasghkdfcvgcgscdgcvg@example.com
+Content-Type: multipart/alternative; boundary=94eb2c092b64d2d836054b3129ac
+
+--94eb2c092b64d2d836054b3129ac
+Content-Type: text/plain; charset=UTF-8
+
+Original email sent to a bounce address
+
+-Mario
+
+--94eb2c092b64d2d836054b3129ac
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><style>body{font-family:Helvetica,Arial;font-size:13px}</style>=
+</head><body style=3D"word-wrap:break-word"><div id=3D"bloop_customfont" st=
+yle=3D"font-family:Helvetica,Arial;font-size:13px;color:rgba(0,0,0,1.0);mar=
+gin:0px;line-height:auto">Original email sent to a bounce address</div><br>=
+<div id=3D"bloop_sign_1490049350653238016" class=3D"bloop_sign"><div style=
+=3D"font-family:helvetica,arial;font-size:13px">-Mario</div></div></body></=
+html>
+
+--94eb2c092b64d2d836054b3129ac--
+
+--94eb2c092b64d876f9054b31296e--

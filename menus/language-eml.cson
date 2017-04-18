@@ -1,27 +1,43 @@
 'context-menu':
+  '.tree-view .file .name[data-name$=\\.eml]': [
+    {
+      'label': "Preview Email",
+      'command': 'language-eml:html-preview'
+    },
+  ],
   'atom-text-editor': [
     'label': 'Email (EML)'
     'submenu': [
       {
-        'label': 'Preview HTML',
+        'label': "Preview HTML",
         'command': 'language-eml:html-preview'
-      }
-      {
-        'label': 'Base64 decode',
-        'command': 'language-eml:base64-decode'
       },
       {
-        'label': 'Base64 encode',
-        'command': 'language-eml:base64-encode'
+        'label': 'Base64',
+        'submenu': [
+          {
+            'label': 'Decode',
+            'command': 'language-eml:base64-decode'
+          },
+          {
+            'label': 'Encode',
+            'command': 'language-eml:base64-encode'
+          },
+        ]
       },
       {
-        'label': 'Quoted-Printable decode',
-        'command': 'language-eml:quoted-printable-decode'
+        'label': 'Quoted-Printable',
+        'submenu': [
+          {
+            'label': 'Decode',
+            'command': 'language-eml:quoted-printable-decode'
+          },
+          {
+            'label': 'Encode',
+            'command': 'language-eml:quoted-printable-encode'
+          }
+        ]
       },
-      {
-        'label': 'Quoted-Printable encode',
-        'command': 'language-eml:quoted-printable-encode'
-      }
     ]
   ]
 
@@ -36,21 +52,31 @@
           'command': 'language-eml:html-preview'
         },
         {
-          'label': 'Base64 decode',
-          'command': 'language-eml:base64-decode'
+          'label': 'Base64',
+          'submenu': [
+            {
+              'label': 'Decode',
+              'command': 'language-eml:base64-decode'
+            },
+            {
+              'label': 'Encode',
+              'command': 'language-eml:base64-encode'
+            },
+          ]
         },
         {
-          'label': 'Base64 encode',
-          'command': 'language-eml:base64-encode'
+          'label': 'Quoted-Printable',
+          'submenu': [
+            {
+              'label': 'Decode',
+              'command': 'language-eml:quoted-printable-decode'
+            },
+            {
+              'label': 'Encode',
+              'command': 'language-eml:quoted-printable-encode'
+            }
+          ]
         },
-        {
-          'label': 'Quoted-Printable decode',
-          'command': 'language-eml:quoted-printable-decode'
-        },
-        {
-          'label': 'Quoted-Printable encode',
-          'command': 'language-eml:quoted-printable-encode'
-        }
       ]
     ]
   }
