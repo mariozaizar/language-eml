@@ -59,6 +59,7 @@ Atom and Node related:
 - api: https://atom.io/docs/api
 - autocomplete: https://github.com/atom/autocomplete-plus/wiki/Provider-API
 - Keymaps: https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+- Guide: https://github.com/blog/2231-building-your-first-atom-plugin
 
 Misc:
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
