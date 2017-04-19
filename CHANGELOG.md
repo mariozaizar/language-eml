@@ -1,7 +1,7 @@
 # Change Log
 
-## [v0.5.1](https://github.com/mariozaizar/language-eml/tree/v0.5.1) (2017-04-19)
-[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.6.0...v0.5.1)
+## [v0.6.1](https://github.com/mariozaizar/language-eml/tree/v0.6.1) (2017-04-19)
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.6.0...v0.6.1)
 
 **Fixed bugs:**
 
