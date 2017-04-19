@@ -21,3 +21,10 @@ apm rebuild # Atom package manager rebuild
 ```shell
 apm publish patch # or minor, mayor
 ```
+
+## Update Changelogs
+
+```
+bundle check || bundle install
+github_changelog_generator
+```

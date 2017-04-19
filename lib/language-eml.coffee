@@ -5,6 +5,7 @@ EMLView = require './language-eml-view'
 # External
 url = require 'url'
 utf8 = require 'utf8'
+windows1251 = require 'windows-1251'
 quotedPrintable = require 'quoted-printable'
 
 AtomPanelView = null
@@ -103,7 +104,13 @@ module.exports =
 
   quotedPrintableDecode: (text) ->
     text = quotedPrintable.decode(text)
-    text = utf8.decode(text)
+
+    try
+      text = utf8.decode(text)
+    catch error
+      log "Can't decode using UTF8, trying with Windows1251. Error was: #{error.reason}"
+      text = windows1251.decode(text)
+
     text
 
   quotedPrintableEncode: (text) ->
