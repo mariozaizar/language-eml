@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.5.1](https://github.com/mariozaizar/language-eml/tree/v0.5.1) (2017-04-19)
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.6.0...v0.5.1)
+
+**Fixed bugs:**
+
+- Fallback to Windows1251 when UTF8 decoding fails [\#10](https://github.com/mariozaizar/language-eml/pull/10) ([mariozaizar](https://github.com/mariozaizar))
+
 ## [v0.6.0](https://github.com/mariozaizar/language-eml/tree/v0.6.0) (2017-04-18)
 [Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.5.0...v0.6.0)
 
