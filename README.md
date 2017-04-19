@@ -69,12 +69,14 @@ Misc:
 Tools:
 - Email Header Analyzer: https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx
 - MIME checker: http://mime.ritey.com/
+- CHANGELOG generator: https://github.com/skywinder/github-changelog-generator
 
 Awesome projects:
 - https://github.com/atom/markdown-preview
 - https://github.com/extesy/atom-text-manipulation
 - https://github.com/mjmlio/atom-mjml-preview
 - https://github.com/mathiasbynens/quoted-printable
+- https://github.com/mathiasbynens/windows-1251
 - https://github.com/sonim1/regex-filter-and-generator
 - https://github.com/webBoxio/atom-html-preview (deprecated)
 

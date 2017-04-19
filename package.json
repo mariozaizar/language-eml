@@ -5,12 +5,14 @@
   "main": "./lib/language-eml",
   "dependencies": {
     "atom-space-pen-views": "^2.0.5",
-    "quoted-printable": "^1.0.1"
+    "quoted-printable": "^1.0.1",
+    "windows-1251": "^1.0.0"
   },
   "description": "Email (EML) package for Atom",
   "devDependencies": {
     "atom-space-pen-views": "^2.0.5",
-    "quoted-printable": "^1.0.1"
+    "quoted-printable": "^1.0.1",
+    "windows-1251": "^1.0.0"
   },
   "engines": {
     "atom": ">0.50.0",
