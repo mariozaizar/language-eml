@@ -1,5 +1,20 @@
 # Change Log
 
+## [Unreleased](https://github.com/mariozaizar/language-eml/tree/HEAD)
+
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.7.0...HEAD)
+
+**Closed issues:**
+
+- User Pref: Invisibles \(spaces, line endings\) are overridden and disappear. [\#11](https://github.com/mariozaizar/language-eml/issues/11)
+
+**Merged pull requests:**
+
+- 🐞 Don't modify all show-invisibles preferences [\#13](https://github.com/mariozaizar/language-eml/pull/13) ([mariozaizar](https://github.com/mariozaizar))
+
+## [v0.7.0](https://github.com/mariozaizar/language-eml/tree/v0.7.0) (2017-08-17)
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.6.1...v0.7.0)
+
 ## [v0.6.1](https://github.com/mariozaizar/language-eml/tree/v0.6.1) (2017-04-19)
 [Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.6.0...v0.6.1)
 
