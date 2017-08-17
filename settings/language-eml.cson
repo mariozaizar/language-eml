@@ -1,12 +1,5 @@
-# NOTE: RFC2821 says each line MUST < 998 chars, and SHOULD < 78 characters, excluding the CRLF.
-'*':
-  editor:
-    invisibles: {}
-    preferredLineLength: 76
-    showInvisibles: true
-
 'text.eml.basic':
   editor:
-    invisibles: {}
+    # NOTE: RFC2821 line MUST < 998 chars, and SHOULD < 78 characters, excluding CRLF (2)(\.
     preferredLineLength: 76
     showInvisibles: true
