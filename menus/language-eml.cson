@@ -13,6 +13,10 @@
         'command': 'language-eml:html-preview'
       },
       {
+        'label': "Encoded-Words Decode",
+        'command': 'language-eml:encoded-words-decode'
+      },
+      {
         'label': 'Base64',
         'submenu': [
           {
@@ -50,6 +54,10 @@
         {
           'label': 'Preview HTML',
           'command': 'language-eml:html-preview'
+        },
+        {
+          'label': "Encoded-Words Decode",
+          'command': 'language-eml:encoded-words-decode'
         },
         {
           'label': 'Base64',

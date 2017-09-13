@@ -48,6 +48,12 @@
       'name': 'constant.other.eml'
     },
 
+    # Headers with encoded-words (https://www.ietf.org/rfc/rfc2047.txt)
+    {
+      'match': '(?i)=\?utf-8\?B\?(.*)\?=',
+      'name': 'keyword.control.eml'
+    },
+
     # Specials
     {
       'match': '(?i)base64',

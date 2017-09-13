@@ -29,6 +29,10 @@ module.exports =
       'language-eml:quoted-printable-encode': =>
         @convert @quotedPrintableEncode
 
+      # Headers with encoded-words (https://www.ietf.org/rfc/rfc2047.txt)
+      'language-eml:encoded-words-decode': =>
+        @convert @decodeEncodedWords
+
       # WIP
       # 'language-eml:saveAsHtml': =>
       #   @saveAsHtml()
@@ -88,23 +92,22 @@ module.exports =
   ###############################################################
   convert: (converter) ->
     if editor = atom.workspace.getActiveTextEditor()
-      selected_text = editor.getSelectedText()
+      selectedText = editor.getSelectedText()
 
-      if selected_text.length == 0
+      if selectedText.length == 0
         log "No selected text, taking full editor line"
         editor.moveToFirstCharacterOfLine()
         editor.selectToEndOfLine()
-        selected_text = editor.getSelectedText()
+        selectedText = editor.getSelectedText()
 
-      log "Selected text:\n#{selected_text}"
-      new_text = converter(selected_text)
+      log "Selected text:\n#{selectedText}"
+      newText = converter(selectedText)
 
       log "Finished"
-      editor.insertText(new_text, {'select': true})
+      editor.insertText(newText, {'select': true})
 
   quotedPrintableDecode: (text) ->
     text = quotedPrintable.decode(text)
-
     try
       text = utf8.decode(text)
     catch error
@@ -121,6 +124,19 @@ module.exports =
 
   base64Encode: (text) ->
     new Buffer(text).toString('base64')
+
+  decodeEncodedWords: (text) ->
+    allEncodedWords = text.match(/=\?utf-8\?B\?(.*)\?=/g)
+    log("Encoded-Words: #{allEncodedWords}")
+
+    if allEncodedWords
+      for element, i in allEncodedWords
+        log("#{i}.- #{element}")
+        elementMatch = element.match(/=\?utf-8\?B\?(.*)\?=/)
+        decodedElement = new Buffer(elementMatch[1], 'base64').toString('utf8')
+        text = text.replace(element, decodedElement)
+
+      text
 
 #################################################################
 # Helper functions
