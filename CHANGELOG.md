@@ -1,9 +1,17 @@
 # Change Log
 
+## [Unreleased](https://github.com/mariozaizar/language-eml/tree/HEAD)
+
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.7.1...HEAD)
+
+**Merged pull requests:**
+
+- Detect and decode headers with encoded-words [\#14](https://github.com/mariozaizar/language-eml/pull/14) ([mariozaizar](https://github.com/mariozaizar))
+
 ## [v0.7.1](https://github.com/mariozaizar/language-eml/tree/v0.7.1) (2017-08-17)
 [Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.7.0...v0.7.1)
 
-**Closed issues:**
+**Fixed bugs:**
 
 - User Pref: Invisibles \(spaces, line endings\) are overridden and disappear. [\#11](https://github.com/mariozaizar/language-eml/issues/11)
 

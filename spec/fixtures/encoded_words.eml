@@ -1,0 +1,31 @@
+Message-ID: <randomid@example.com>
+From: "=?utf-8?B?6Z+p5a2Q?=" <sender@example.com>
+To: <recipient@example.com>
+Subject: =?utf-8?B?MTkgICAgICAgICAg5r6z6I+b5aiB5bC85pav5Lq6MzM3NDE4?=
+	=?utf-8?B?54K5QzBN6YKA5oKo57S45YaK5ou/4pGiOOi1ojPiko8w5o+QK0vmnI1RMjMxMTE2ODE0?=
+	=?utf-8?B?NOaLvw==?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="e3fa341fd6394745a987549800031234"
+Date: Tue, 15 Aug 2017 13:00:09 +0800
+
+This is a multi-part message in MIME format.
+
+--e3fa341fd6394745a987549800031234
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+=E5=90=AF=E5=8F=91=E5=BC=8F=E7=9F=A5=E8=AF=86shiolspD=E9=95=B6=E5=B5=8C=E5=
+=9B=BE=E6=9D=A8=E7=BB=8D=E9=91=AB
+
+--e3fa341fd6394745a987549800031234
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>=E5=90=AF=E5=8F=91=E5=BC=8F=E7=9F=A5=E8=AF=86shi</p><p>olspD</p><p>=E9=
+=95=B6=E5=B5=8C=E5=9B=BE</p><div>=E6=9D=A8=E7=BB=8D=E9=91=AB</di=
+v>
+
+--e3fa341fd6394745a987549800031234--
