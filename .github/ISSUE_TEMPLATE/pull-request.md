@@ -21,7 +21,7 @@ We must be able to understand the design of your change from this description. I
 
 <!-- What benefits will be realized by the code change? -->
 
-1. Include screenshoots (Before/After)
+1. Include screenshots (Before/After)
 2. Attach example files if possible.
 
 ### Possible Drawbacks
