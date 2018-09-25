@@ -8,3 +8,6 @@ PACKAGE_PATH=$INSTALL_PATH/language-eml;
 
 mkdir -p $INSTALL_PATH;
 ln -siv $PWD $INSTALL_PATH && echo "This directory got linked in $PACKAGE_PATH" || echo "Can't link this directory to $PACKAGE_PATH"
+
+npm install;
+apm rebuild;
