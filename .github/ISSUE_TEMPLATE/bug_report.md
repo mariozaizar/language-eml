@@ -14,7 +14,11 @@ about: Create a report to help us improve
 
 ### Steps to reproduce
 
-<!-- Steps to reproduce the behavior. Include screenshots. Attach example files if possible. -->
+<!-- 
+Steps to reproduce the behavior. 
+Include screenshots. 
+Attach example files if possible. 
+-->
 
 ### Expected behavior
 
@@ -23,7 +27,6 @@ about: Create a report to help us improve
 ### References
 
 <!-- Complete the following information -->
-
 * OS:
 * Atom version:
 * APM version:
