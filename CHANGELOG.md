@@ -1,5 +1,13 @@
 # Change Log
 
+## [Unreleased](https://github.com/mariozaizar/language-eml/tree/HEAD)
+
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.8.0...HEAD)
+
+**Merged pull requests:**
+
+- Refactor grammar and improve HTML highlighting [\#16](https://github.com/mariozaizar/language-eml/pull/16) ([Alhadis](https://github.com/Alhadis))
+
 ## [v0.8.0](https://github.com/mariozaizar/language-eml/tree/v0.8.0) (2017-09-13)
 [Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.7.1...v0.8.0)
 
