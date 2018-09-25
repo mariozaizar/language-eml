@@ -19,7 +19,7 @@ apm rebuild # Atom package manager rebuild
 ## Release new versions
 
 ```shell
-apm publish patch # or minor, mayor
+apm publish patch # or minor, major
 ```
 
 ## Update Changelogs
