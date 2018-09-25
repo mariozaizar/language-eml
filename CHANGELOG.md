@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/mariozaizar/language-eml/tree/HEAD)
-
-[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.8.0...HEAD)
+## [v1.1.1](https://github.com/mariozaizar/language-eml/tree/v1.1.1) (2018-09-25)
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.8.0...v1.1.1)
 
 **Merged pull requests:**
 
