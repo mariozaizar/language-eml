@@ -111,44 +111,44 @@ repository:
       0: name: 'keyword.control.boundary.eml'
     patterns: [{
       # Content-Type: text/html;
-      name:  "meta.embedded.html.eml"
-      begin: "^(?i)(Content-Type:)\\s*(text/html(?=[\\s;+]).*)"
-      end:   "^(?=--(?!>))"
+      name:  'meta.embedded.html.eml'
+      begin: '^(?i)(Content-Type:)\\s*(text/html(?=[\\s;+]).*)'
+      end:   '^(?=--(?!>))'
       patterns: [
-        {include: "#boundaryHeaders"}
+        {include: '#boundaryHeaders'}
         {include: 'text.html.basic'}
       ]
-      contentName: "meta.embedded.html"
+      contentName: 'meta.embedded.html'
       beginCaptures:
-        1: patterns: [include: "#headers"]
-        2: patterns: [include: "$self"]
+        1: patterns: [include: '#headers']
+        2: patterns: [include: '$self']
     },{
       # Plain text (no header highlighting)
-      name:  "meta.embedded.text.eml"
-      begin: "^(?i)(Content-Type:)\\s*((?!text/html(?=[\\s;+]))\\S+.*)"
-      end:   "^(?=--(?!>))"
-      contentName: "markup.raw.html"
+      name:  'meta.embedded.text.eml'
+      begin: '^(?i)(Content-Type:)\\s*((?!text/html(?=[\\s;+]))\\S+.*)'
+      end:   '^(?=--(?!>))'
+      contentName: 'markup.raw.html'
       beginCaptures:
-        1: patterns: [include: "#headers"]
-        2: patterns: [include: "$self"]
-      patterns: [include: "#boundaryHeaders"]
+        1: patterns: [include: '#headers']
+        2: patterns: [include: '$self']
+      patterns: [include: '#boundaryHeaders']
     },{
       # Other headers unrelated to content-type
-      include: "$self"
+      include: '$self'
     }]
 
   # Additional headers following Content-Type, but before body 
   boundaryHeaders:
-    begin: "\\G"
-    end: "^(?=\\s*)$"
-    patterns: [include: "$self"]
+    begin: '\\G'
+    end: '^(?=\\s*)$'
+    patterns: [include: '$self']
 
   # Header fields
   headers:
     captures:
-      1: name: "variable.header.name.eml"
-      2: name: "punctuation.separator.dictionary.key-value.colon.eml"
-    match: """(?xi) ^
+      1: name: 'variable.header.name.eml'
+      2: name: 'punctuation.separator.dictionary.key-value.colon.eml'
+    match: '''(?xi) ^
       ( archived-at
       | cc
       | content-type
@@ -171,7 +171,7 @@ repository:
       | x-[^:]*
       | [A-Z][a-zA-Z0-9-]*
       ) (:)
-    """
+    '''
 
   # Encoded-words (https://www.ietf.org/rfc/rfc2047.txt)
   encodedWord:
@@ -181,12 +181,12 @@ repository:
   # IPv4
   ipv4:
     name: 'variable.other.ipv4.eml'
-    match: "(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"
+    match: '(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)'
 
   # IPv6
   ipv6:
     name: 'variable.other.eml'
-    match: """(?x)
+    match: '''(?x)
       ( ([0-9a-fA-F]{1,4}:){7}     [0-9a-fA-F]{1,4}
       | ([0-9a-fA-F]{1,4}:){1,7}  :
       | ([0-9a-fA-F]{1,4}:){1,6}  :[0-9a-fA-F]{1,4}
@@ -199,33 +199,33 @@ repository:
       | ::(ffff(:0{1,4})?:)? ((25[0-5]|(2[0-4]|1?[0-9])?[0-9])\\.){3}(25[0-5]|(2[0-4]|1?[0-9])?[0-9])
       | ([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1?[0-9])?[0-9])\\.){3}(25[0-5]|(2[0-4]|1?[0-9])?[0-9])
       )
-    """
+    '''
 
   # Quoted Text
   quote:
     name:  'markup.quote.line.eml'
     begin: '^[|>]'
-    end:   "$"
+    end:   '$'
     beginCaptures:
-      0: name: "punctuation.definition.comment.quote.eml"
+      0: name: 'punctuation.definition.comment.quote.eml'
 
   # Specials
   encodingTypes:
     name: 'keyword.operator.special.eml'
-    match: """(?xi)
+    match: '''(?xi)
       ( base64
       | multipart\\/.*:
       | image\\/.*;
       | text\\/.*
       | boundary=.*
       )
-    """
+    '''
 
   # UUID
   uuid:
     name: 'constant.other.uuid.eml'
-    match: """(?x)
+    match: '''(?x)
       ( [0-9a-fA-F]{32}
       | [0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}
       )
-    """
+    '''
