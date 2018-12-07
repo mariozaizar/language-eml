@@ -33,6 +33,10 @@ module.exports =
       'language-eml:encoded-words-decode': =>
         @convert @decodeEncodedWords
 
+      # https://www.npmjs.com/package/node-tnef
+      'language-eml:tnef-decode': =>
+        @convert @decodeTNEF
+
       # WIP
       # 'language-eml:saveAsHtml': =>
       #   @saveAsHtml()
@@ -125,6 +129,18 @@ module.exports =
   base64Encode: (text) ->
     new Buffer(text).toString('base64')
 
+  decodeTNEF: (text) ->
+    tnefContent = text.match(/=\?utf-8\?B\?(.*)\?=/g)
+    log("TNEF: #{tnefContent}")
+
+    if tnefContent
+      for element, i in tnefContent
+        log("#{i}.- #{element}")
+        elementMatch = element.match(/=\?utf-8\?B\?(.*)\?=/)
+        decodedElement = new Buffer(elementMatch[1], 'base64').toString('utf8')
+        text = text.replace(element, decodedElement)
+      text
+
   decodeEncodedWords: (text) ->
     allEncodedWords = text.match(/=\?utf-8\?B\?(.*)\?=/g)
     log("Encoded-Words: #{allEncodedWords}")
@@ -135,7 +151,6 @@ module.exports =
         elementMatch = element.match(/=\?utf-8\?B\?(.*)\?=/)
         decodedElement = new Buffer(elementMatch[1], 'base64').toString('utf8')
         text = text.replace(element, decodedElement)
-
       text
 
 #################################################################

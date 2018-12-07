@@ -17,18 +17,21 @@ Adds syntax highlighting, snippets, shortcuts, and commands to Email files in At
 * Grammar:
   * [Syntax highlighting](#eml-grammar) for `.eml`, `.msg`, `.mbx` and `.mbox` files.
 * Snippets:
-  * [Plain-Text email template](#eml-snippets-basic).
-  * HTML email template.
-  * [Multipart email template](#eml-snippets-multipart).
-  * Attachments email template.
+  * E-mail templates:
+    * Plain-Text.
+    * HTML.
+    * Multipart.
+    * MIME.
 * Commands:
   * [Preview email](#eml-preview).
-  * [To decode/encode base64](#eml-decode-base64).
-  * [To decode/encode quoted-printable](#eml-quote-printable-decode).
+  * Decode:
+    * [base64](#eml-decode-base64).
+    * [quoted-printable](#eml-quote-printable-decode).
+  * Encode:
+    * [base64](#eml-decode-base64).
+    * [quoted-printable](#eml-quote-printable-decode).
 * Keymaps (shortcuts):
   * <kbd>ctrl-alt-1</kbd> for email preview.
-  * <kbd>ctrl-alt-2</kbd> for quoted-printable decode.
-  * <kbd>ctrl-alt-3</kbd> for base64 decode.
 
 ## Install
 

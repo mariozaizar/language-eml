@@ -1,5 +1,7 @@
 ### TODO & IDEAS 💡
 
+- Utils:
+  - [ ] Decode Winmail.dat and other files from TNEF parts.
 - "Email Preview" feature
   - [ ] Add "Save as HTML" to save the previewed HTML.
   - [ ] Add "Copy as HTML" to copy the previewed HTML.

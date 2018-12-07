@@ -21,6 +21,7 @@ Misc:
 - https://templates.mailchimp.com/
 
 Tools:
+- TNEF: https://www.npmjs.com/package/node-tnef
 - Email Header Analyzer: https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx
 - MIME checker: http://mime.ritey.com/
 - CHANGELOG generator: https://github.com/skywinder/github-changelog-generator

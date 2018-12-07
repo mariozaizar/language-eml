@@ -1,5 +1,2 @@
 'atom-text-editor[data-grammar~=eml]':
   'ctrl-alt-1': 'language-eml:email-preview'
-  'ctrl-alt-2': 'language-eml:quoted-printable-decode'
-  'ctrl-alt-3': 'language-eml:base64-decode'
-  'ctrl-alt-4': 'language-eml:encoded-words-decode'

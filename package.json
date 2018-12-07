@@ -6,13 +6,15 @@
   "dependencies": {
     "atom-space-pen-views": "^2.0.5",
     "quoted-printable": "^1.0.1",
-    "windows-1251": "^1.0.0"
+    "windows-1251": "^1.0.0",
+    "node-tnef": "^1.3.0"
   },
   "description": "Email (EML) package for Atom",
   "devDependencies": {
     "atom-space-pen-views": "^2.0.5",
     "quoted-printable": "^1.0.1",
-    "windows-1251": "^1.0.0"
+    "windows-1251": "^1.0.0",
+    "node-tnef": "^1.3.0"
   },
   "engines": {
     "atom": ">0.50.0",

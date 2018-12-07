@@ -1,47 +1,52 @@
 'context-menu':
   '.tree-view .file .name[data-name$=\\.eml]': [
     {
-      'label': "Preview Email",
+      'label': "Preview e-mail",
       'command': 'language-eml:html-preview'
     },
   ],
   'atom-text-editor': [
-    'label': 'Email (EML)'
-    'submenu': [
-      {
-        'label': "Preview HTML",
-        'command': 'language-eml:html-preview'
-      },
-      {
-        'label': "Encoded-Words Decode",
-        'command': 'language-eml:encoded-words-decode'
-      },
-      {
-        'label': 'Base64',
-        'submenu': [
-          {
-            'label': 'Decode',
-            'command': 'language-eml:base64-decode'
-          },
-          {
-            'label': 'Encode',
-            'command': 'language-eml:base64-encode'
-          },
-        ]
-      },
-      {
-        'label': 'Quoted-Printable',
-        'submenu': [
-          {
-            'label': 'Decode',
-            'command': 'language-eml:quoted-printable-decode'
-          },
-          {
-            'label': 'Encode',
-            'command': 'language-eml:quoted-printable-encode'
-          }
-        ]
-      },
+    'label': 'e-mail'
+      'submenu': [
+        {
+          'label': 'Preview HTML',
+          'command': 'language-eml:html-preview'
+        },
+        {
+          'label': 'Decode',
+          'submenu': [
+            {
+              'label': 'Base64',
+              'command': 'language-eml:base64-decode'
+            },
+            {
+              'label': 'Quoted-Printable',
+              'command': 'language-eml:quoted-printable-decode'
+            },
+            {
+              'label': 'TNEF',
+              'command': 'language-eml:tnef-decode'
+            },
+            {
+              'label': 'Encoded-Words',
+              'command': 'language-eml:encoded-words-decode'
+            },
+          ]
+        },
+        {
+          'label': 'Encode',
+          'submenu': [
+            {
+              'label': 'Base64',
+              'command': 'language-eml:base64-encode'
+            },
+            {
+              'label': 'Quoted-Printable',
+              'command': 'language-eml:quoted-printable-encode'
+            }
+          ]
+        },
+      ]
     ]
   ]
 
@@ -49,38 +54,42 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Email (EML)'
+      'label': 'e-mail'
       'submenu': [
         {
           'label': 'Preview HTML',
           'command': 'language-eml:html-preview'
         },
         {
-          'label': "Encoded-Words Decode",
-          'command': 'language-eml:encoded-words-decode'
-        },
-        {
-          'label': 'Base64',
+          'label': 'Decode',
           'submenu': [
             {
-              'label': 'Decode',
+              'label': 'Base64',
               'command': 'language-eml:base64-decode'
             },
             {
-              'label': 'Encode',
-              'command': 'language-eml:base64-encode'
+              'label': 'Quoted-Printable',
+              'command': 'language-eml:quoted-printable-decode'
+            },
+            {
+              'label': 'TNEF',
+              'command': 'language-eml:tnef-decode'
+            },
+            {
+              'label': 'Encoded-Words',
+              'command': 'language-eml:encoded-words-decode'
             },
           ]
         },
         {
-          'label': 'Quoted-Printable',
+          'label': 'Encode',
           'submenu': [
             {
-              'label': 'Decode',
-              'command': 'language-eml:quoted-printable-decode'
+              'label': 'Base64',
+              'command': 'language-eml:base64-encode'
             },
             {
-              'label': 'Encode',
+              'label': 'Quoted-Printable',
               'command': 'language-eml:quoted-printable-encode'
             }
           ]
