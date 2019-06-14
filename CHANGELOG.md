@@ -1,5 +1,24 @@
 # Change Log
 
+## [Unreleased](https://github.com/mariozaizar/language-eml/tree/HEAD)
+
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v1.1.1...HEAD)
+
+**Fixed bugs:**
+
+- Quoted-printable encoding unrecognized on GitHub [\#15](https://github.com/mariozaizar/language-eml/issues/15)
+- IPv6 matching fix [\#23](https://github.com/mariozaizar/language-eml/pull/23) ([mariozaizar](https://github.com/mariozaizar))
+
+**Closed issues:**
+
+- IPv6 matching incomplete [\#21](https://github.com/mariozaizar/language-eml/issues/21)
+
+**Merged pull requests:**
+
+- Update issue templates [\#19](https://github.com/mariozaizar/language-eml/pull/19) ([mariozaizar](https://github.com/mariozaizar))
+- Update issue templates [\#18](https://github.com/mariozaizar/language-eml/pull/18) ([mariozaizar](https://github.com/mariozaizar))
+- Create CODE\_OF\_CONDUCT.md [\#17](https://github.com/mariozaizar/language-eml/pull/17) ([mariozaizar](https://github.com/mariozaizar))
+
 ## [v1.1.1](https://github.com/mariozaizar/language-eml/tree/v1.1.1) (2018-09-25)
 [Full Changelog](https://github.com/mariozaizar/language-eml/compare/v0.8.0...v1.1.1)
 
