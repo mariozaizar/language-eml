@@ -2,7 +2,14 @@
 
 ## [Unreleased](https://github.com/mariozaizar/language-eml/tree/HEAD)
 
-[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v1.1.1...HEAD)
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v1.1.2...HEAD)
+
+**Merged pull requests:**
+
+- Fix package repo url [\#20](https://github.com/mariozaizar/language-eml/pull/20) ([wesinator](https://github.com/wesinator))
+
+## [v1.1.2](https://github.com/mariozaizar/language-eml/tree/v1.1.2) (2019-06-14)
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v1.1.1...v1.1.2)
 
 **Fixed bugs:**
 

@@ -24,7 +24,9 @@ apm publish patch # or minor, major
 
 ## Update Changelogs
 
+*Make sure you have `export CHANGELOG_GITHUB_TOKEN=""` variable to avoid GitHub API rate limit errors.
+
 ```
 bundle check || bundle install
-github_changelog_generator
+bundle exec github_changelog_generator
 ```
