@@ -7,6 +7,9 @@ url = require 'url'
 utf8 = require 'utf8'
 windows1251 = require 'windows-1251'
 quotedPrintable = require 'quoted-printable'
+tnef = require('node-tnef')
+path = require('path')
+fs = require('fs')
 
 AtomPanelView = null
 
@@ -35,7 +38,7 @@ module.exports =
 
       # https://www.npmjs.com/package/node-tnef
       'language-eml:tnef-decode': =>
-        @convert @decodeTNEF
+        @decodeTNEF
 
       # WIP
       # 'language-eml:saveAsHtml': =>
@@ -82,7 +85,24 @@ module.exports =
       pane.destroyItem(pane.itemForURI(uri)) if pane
       atom.workspace.open(uri, { split: 'right', searchAllPanes: true }).then(() => AtomPanelView.render(editor))
 
-  # WIP
+  ###############################################################
+  decodeTNEF: (currentEditor) ->
+    log("decodeTNEF!")
+    # tnefContent = text.match(/=\?utf-8\?B\?(.*)\?=/g)
+    # tnef.parse('/path/to/the/tnef/file', function (err, content) {
+    #     # Create new files for all attachments
+    #     var firstAttachment = content[0]
+    #     fs.writeFile(path.join(aPath, firstAttachment.Title), new Buffer(firstAttachment.Data), (err) => {
+    #       log('Success!')
+    #     })
+    # })
+    #
+    # tnef.parseBuffer([your buffer of data], function (err, content) {
+    #     // content would contain the result data as a Buffer
+    #     // from here you can write to a file, evaluate the contents(ex. content.Attachments or content.Body)
+    # })
+
+  ###############################################################
   # copyAsHtml: () ->
   #   uri = 'eml-preview://file'
   #   if pane = atom.workspace.paneForURI(uri)
@@ -128,18 +148,6 @@ module.exports =
 
   base64Encode: (text) ->
     new Buffer(text).toString('base64')
-
-  decodeTNEF: (text) ->
-    tnefContent = text.match(/=\?utf-8\?B\?(.*)\?=/g)
-    log("TNEF: #{tnefContent}")
-
-    if tnefContent
-      for element, i in tnefContent
-        log("#{i}.- #{element}")
-        elementMatch = element.match(/=\?utf-8\?B\?(.*)\?=/)
-        decodedElement = new Buffer(elementMatch[1], 'base64').toString('utf8')
-        text = text.replace(element, decodedElement)
-      text
 
   decodeEncodedWords: (text) ->
     allEncodedWords = text.match(/=\?utf-8\?B\?(.*)\?=/g)

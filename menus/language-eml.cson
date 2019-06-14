@@ -1,52 +1,41 @@
 'context-menu':
   '.tree-view .file .name[data-name$=\\.eml]': [
     {
-      'label': "Preview e-mail",
+      'label': "Preview Email",
       'command': 'language-eml:html-preview'
     },
   ],
   'atom-text-editor': [
-    'label': 'e-mail'
-      'submenu': [
-        {
-          'label': 'Preview HTML',
-          'command': 'language-eml:html-preview'
-        },
-        {
-          'label': 'Decode',
-          'submenu': [
-            {
-              'label': 'Base64',
-              'command': 'language-eml:base64-decode'
-            },
-            {
-              'label': 'Quoted-Printable',
-              'command': 'language-eml:quoted-printable-decode'
-            },
-            {
-              'label': 'TNEF',
-              'command': 'language-eml:tnef-decode'
-            },
-            {
-              'label': 'Encoded-Words',
-              'command': 'language-eml:encoded-words-decode'
-            },
-          ]
-        },
-        {
-          'label': 'Encode',
-          'submenu': [
-            {
-              'label': 'Base64',
-              'command': 'language-eml:base64-encode'
-            },
-            {
-              'label': 'Quoted-Printable',
-              'command': 'language-eml:quoted-printable-encode'
-            }
-          ]
-        },
-      ]
+    'label': 'Email'
+    'submenu': [
+      {
+        'label': 'Preview HTML body (text/html)',
+        'command': 'language-eml:html-preview'
+      },
+      {
+        'label': 'Preview Plain-Text body (text/plain)',
+        'command': 'language-eml:extract-rfc822'
+      },
+      {
+        'label': 'Open e-mails attachments (message/rfc822)',
+        'command': 'language-eml:extract-rfc822'
+      },
+      {
+        'label': 'Open TNEF attachments (application/ms-tnef)',
+        'command': 'language-eml:extract-tnef'
+      },
+      {
+        'label': 'Decode Base64 content',
+        'command': 'language-eml:base64-decode'
+      },
+      {
+        'label': 'Decode Quoted-Printable content',
+        'command': 'language-eml:quoted-printable-decode'
+      },
+      {
+        'label': 'Decode Encoded-Words content',
+        'command': 'language-eml:encoded-words-decode'
+      },
     ]
   ]
 
@@ -54,45 +43,35 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'e-mail'
+      'label': 'Email'
       'submenu': [
         {
-          'label': 'Preview HTML',
+          'label': 'Preview HTML body (text/html)',
           'command': 'language-eml:html-preview'
         },
         {
-          'label': 'Decode',
-          'submenu': [
-            {
-              'label': 'Base64',
-              'command': 'language-eml:base64-decode'
-            },
-            {
-              'label': 'Quoted-Printable',
-              'command': 'language-eml:quoted-printable-decode'
-            },
-            {
-              'label': 'TNEF',
-              'command': 'language-eml:tnef-decode'
-            },
-            {
-              'label': 'Encoded-Words',
-              'command': 'language-eml:encoded-words-decode'
-            },
-          ]
+          'label': 'Preview Plain-Text body (text/plain)',
+          'command': 'language-eml:extract-rfc822'
         },
         {
-          'label': 'Encode',
-          'submenu': [
-            {
-              'label': 'Base64',
-              'command': 'language-eml:base64-encode'
-            },
-            {
-              'label': 'Quoted-Printable',
-              'command': 'language-eml:quoted-printable-encode'
-            }
-          ]
+          'label': 'Open e-mails attachments (message/rfc822)',
+          'command': 'language-eml:extract-rfc822'
+        },
+        {
+          'label': 'Open TNEF attachments (application/ms-tnef)',
+          'command': 'language-eml:extract-tnef'
+        },
+        {
+          'label': 'Decode Base64 content',
+          'command': 'language-eml:base64-decode'
+        },
+        {
+          'label': 'Decode Quoted-Printable content',
+          'command': 'language-eml:quoted-printable-decode'
+        },
+        {
+          'label': 'Decode Encoded-Words content',
+          'command': 'language-eml:encoded-words-decode'
         },
       ]
     ]
