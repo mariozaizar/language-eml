@@ -46,7 +46,7 @@ DEPENDENCIES
   github_changelog_generator
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.6.3p62
 
 BUNDLED WITH
-   1.16.4
+   1.17.2
