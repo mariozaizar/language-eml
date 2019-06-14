@@ -18,6 +18,8 @@ apm rebuild # Atom package manager rebuild
 
 ## Release new versions
 
+*Make sure you have `export ATOM_ACCESS_TOKEN="<123>"` variable to avoid APM authentication errors.
+
 ```shell
 apm login # You'll need your Atom API token
 apm publish patch # or minor, major
@@ -25,7 +27,7 @@ apm publish patch # or minor, major
 
 ## Update Changelogs
 
-*Make sure you have `export CHANGELOG_GITHUB_TOKEN=""` variable to avoid GitHub API rate limit errors.
+*Make sure you have `export CHANGELOG_GITHUB_TOKEN="<123>"` variable to avoid GitHub API rate limit errors.
 
 ```
 bundle check || bundle install
