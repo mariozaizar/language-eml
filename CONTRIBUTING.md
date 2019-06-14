@@ -19,6 +19,7 @@ apm rebuild # Atom package manager rebuild
 ## Release new versions
 
 ```shell
+apm login # You'll need your Atom API token
 apm publish patch # or minor, major
 ```
 
