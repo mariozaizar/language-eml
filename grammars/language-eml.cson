@@ -23,7 +23,7 @@ repository:
       {
         # "John Doe" <john.doe@example.com>
         name: 'meta.email-address.eml'
-        match: """(?x)
+        match: """(?ix)
           ((") [-a-zA-Z0-9.\\x20+_]+ (")) \\s*
           ((<) [-a-zA-Z0-9.]+@[-a-zA-Z0-9.]+ (>))
         """
@@ -38,7 +38,7 @@ repository:
       {
         # "John Doe" &lt;john.doe@example.com&gt;
         name: 'meta.email-address.eml'
-        match: """(?x)
+        match: """(?ix)
           ((") [-a-zA-Z0-9.\\ +_]+ (")) \\s*
           ((&lt;) [-a-zA-Z0-9.]+@[-a-zA-Z0-9.]+ (&gt;))
         """
@@ -53,7 +53,7 @@ repository:
       {
         # John <john.doe@example.com>
         name: 'meta.email-address.eml'
-        match: """(?x)
+        match: """(?ix)
           ([-a-zZ-Z0-9.+_]+) \\s*
           (<)([-a-zA-Z0-9.]+@[-a-zA-Z0-9.]+)(>)
         """
@@ -66,7 +66,7 @@ repository:
       {
         # John &lt;john.doe@example.com&gt;
         name: 'meta.email-address.eml'
-        match: """(?x)
+        match: """(?ix)
           ([-a-zZ-Z0-9.+_]+) \\s*
           (&lt;)([-a-zA-Z0-9.]+@[-a-zA-Z0-9.]+)(&gt;)
         """
@@ -86,7 +86,7 @@ repository:
       }
       {
         # <john.doe@example.com>
-        match: '(<)([-a-zA-Z0-9.+_]+@[-a-zA-Z0-9.]+)(>)'
+        match: '(<?)([-a-zA-Z0-9.+_]+@[-a-zA-Z0-9.]+)(>?)'
         captures:
           1: name: "punctuation.definition.tag.begin.eml"
           2: name: "constant.other.author-address.eml"
