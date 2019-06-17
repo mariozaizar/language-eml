@@ -1,8 +1,18 @@
 # Change Log
 
-## [Unreleased](https://github.com/mariozaizar/language-eml/tree/HEAD)
+## [v1.2.5](https://github.com/mariozaizar/language-eml/tree/v1.2.5) (2019-06-17)
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v1.2.4...v1.2.5)
 
-[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v1.1.2...HEAD)
+**Fixed bugs:**
+
+- HTML value and closing brace partially highlighted on Github [\#22](https://github.com/mariozaizar/language-eml/issues/22)
+
+**Merged pull requests:**
+
+- Fixes \#22 by adding single-part email detection \(HTML\) [\#25](https://github.com/mariozaizar/language-eml/pull/25) ([mariozaizar](https://github.com/mariozaizar))
+
+## [v1.2.4](https://github.com/mariozaizar/language-eml/tree/v1.2.4) (2019-06-14)
+[Full Changelog](https://github.com/mariozaizar/language-eml/compare/v1.1.2...v1.2.4)
 
 **Merged pull requests:**
 
